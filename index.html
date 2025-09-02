@@ -113,7 +113,7 @@
     <!--------------------------------- mobile menu -------------------------------->
     <section
       id="mobMenu"
-      class="w-full h-fit fix lg:hidden bg-[#131313ab] absolute top-0 right-full duration-300"
+      class="w-full h-fit fix lg:hidden bg-[#131313ab] absolute top-0 right-full duration-300 z-[60]"
     >
       <!-- close button -->
       <div id="closebtn" class="absolute right-4 top-6">
@@ -208,7 +208,7 @@
     </section>
     <!---------------------------------- main ----------------------------------->
     <main class="w-full 2xl:container 2xl:mx-auto">
-      <!-- row first -->
+      <!----------------------------------- row first ----------------------------->
       <div class="w-full flex flex-wrap justify-around">
         <!-- left side -->
         <div class="w-full md:w-[45%] px-4 py-8">
@@ -484,7 +484,7 @@
         <div class="w-full mt-20 md:flex md:flex-wrap md:justify-around">
           <!-- left -->
           <div
-            class="w-full h-fit pb-3 md:w-[45%] flex flex-wrap gap-20 justify-center"
+            class="w-full h-fit pb-3 md:w-[45%] flex flex-wrap gap-20 justify-center mb-16 md:mb-0"
           >
             <!-- step 1 -->
             <div class="w-[95%] bgGlass relative mx-auto">
@@ -653,6 +653,69 @@
               />
             </figure>
           </div>
+        </div>
+      </section>
+      <!-- Our Speciality -->
+      <section class="mt-12">
+        <!-- top -->
+        <div class="w-full">
+          <button class="btnFav2 px-6 py-1 flex mx-auto">Our Speciality</button>
+          <h2
+            class="text-[28px] md:mt-6 w-[95%] md:w-[60%] lg:w-[50%] md:text-3xl lg:text-[50px] mx-auto text-center px-2 mt-2"
+          >
+            OUR COLLECTION
+          </h2>
+        </div>
+        <!-- slider -->
+        <div class="w-full mt-5">
+          <div class="w-full flex gap-5 pl-5 overflow-hidden">
+            <!-- card 1 -->
+            <figure
+              class="w-[90%] md:w-[45%] lg:w-[30%] h-[450px] mx-auto flex justify-center items-center rounded-3xl bg-[#ffffff15] border border-[#dadada1e] relative shrink-0"
+            >
+              <img
+                class="w-[90%] h-[90%] object-cover rounded-[55px]"
+                src="src/images/img6.jpg"
+                alt=""
+              />
+              <button
+                class="w-[90%] h-[60px] absolute bottom-[7%] rounded-2xl bg-[#ffffff15] border border-[#dadada1e] hover:bg-white duration-500 hover:text-[#703ffe] cursor-pointer"
+              >
+                3D Digital ArtWork
+              </button>
+            </figure>
+            <!-- card 2 -->
+            <figure
+              class="w-[90%] md:w-[45%] lg:w-[30%] h-[450px] mx-auto flex justify-center items-center rounded-3xl bg-[#ffffff15] border border-[#dadada1e] relative shrink-0"
+            >
+              <img
+                class="w-[90%] h-[90%] object-cover rounded-[55px]"
+                src="src/images/img7.png"
+                alt=""
+              />
+              <button
+                class="w-[90%] h-[60px] absolute bottom-[7%] rounded-2xl bg-[#ffffff15] border border-[#dadada1e] hover:bg-white duration-500 hover:text-[#703ffe] cursor-pointer"
+              >
+                3D Digital ArtWork
+              </button>
+            </figure>
+            <!-- card 3 -->
+            <figure
+              class="w-[90%] md:w-[45%] lg:w-[30%] h-[450px] mx-auto flex justify-center items-center rounded-3xl bg-[#ffffff15] border border-[#dadada1e] relative shrink-0"
+            >
+              <img
+                class="w-[90%] h-[90%] object-cover rounded-[55px]"
+                src="src/images/img8.png"
+                alt=""
+              />
+              <button
+                class="w-[90%] h-[60px] absolute bottom-[7%] rounded-2xl bg-[#ffffff15] border border-[#dadada1e] hover:bg-white duration-500 hover:text-[#703ffe] cursor-pointer"
+              >
+                3D Digital ArtWork
+              </button>
+            </figure>
+          </div>
+          <div></div>
         </div>
       </section>
     </main>
