@@ -79,3 +79,12 @@ body {
   }
   
 }
+
+/* -------------------------------------- */
+.mybg {
+  background: #ffffff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.047) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.simpleFont{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
