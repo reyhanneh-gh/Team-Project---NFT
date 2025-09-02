@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Zen Dots";
+  src: url(../fonts/zen.ttf);
+}
+
+@font-face {
+  font-family: "Readex Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Readex Pro Regular"),
+    url("../fonts/ReadexPro[HEXP\,wght].woff") format("woff");
+}
+
+body {
+  font-family: "Zen Dots";
+}
+
+/* npx @tailwindcss/cli -i ./src/style/input.css -o ./src/style/output.css --watch */
+
+@layer utilities {
+  .bgFav {
+    background-color: transparent;
+    color: #ffff;
+    background-image: linear-gradient(220deg, #b392ff 20%, #703ffe 100%);
+    &:hover {
+      background-image: linear-gradient(90deg, #b392ff 20%, #703ffe 100%);
+    }
+  }
+  .lightMode {
+    @apply text-white;
+  }
+  .zendots {
+    font-family: "Zen Dots";
+  }
+  .readex {
+    font-family: "Readex Pro Regular";
+  }
+  .hoverFav {
+    @apply hover:text-[#703FFE] duration-500;
+  }
+  .txtFav {
+    @apply text-[#703FFE];
+  }
+  .bgGlass {
+    background-color: transparent;
+    margin: -35px 0px 0px 0px;
+    padding: 61px 20px 0px 20px;
+    background-image: linear-gradient(180deg, #ffffff0d 0%, #ffffff00 73.86%);
+    border-style: solid;
+    border-width: 1px 1px 0px 1px;
+    border-color: #dadada1e;
+    border-radius: 16px 16px 0px 0px;
+  }
+}
+
+@layer components {
+  .btnFav {
+    border-radius: 12px;
+    width: 200px;
+    height: 52px;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #ffff;
+    background-image: linear-gradient(220deg, #b392ff 20%, #703ffe 100%);
+    &:hover {
+      background-image: linear-gradient(90deg, #b392ff 20%, #703ffe 100%);
+    }
+  }
+  .btnFav2 {
+    background-color: #141634;
+    border-radius: 32px;
+    border: 1px solid #dadada1e;
+    color: #703ffe;
+  }
+  
+}
