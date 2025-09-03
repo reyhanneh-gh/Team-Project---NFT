@@ -1,9 +1,10 @@
 let inpDrkLt = document.getElementById("drkLt");
 let imgDrkLt = document.getElementById("imgDrkLt");
+let _main = document.querySelector("main");
 
 inpDrkLt.addEventListener("click", () => {
   inpDrkLt.classList.toggle("bg-[#b392ff]");
-
+  _main.classList.add("dark");
   if (imgDrkLt.getAttribute("src") === "src/images/lightModeWhite.png") {
     imgDrkLt.setAttribute("src", "src/images/darkModeBlack.png");
   } else {
@@ -15,24 +16,35 @@ inpDrkLt.addEventListener("click", () => {
 let inpSubHome = document.getElementById("inpSubHome");
 let subHome = document.getElementById("subHome");
 
+// ذخیره ارتفاع واقعی
+subHome.setAttribute("data-h", subHome.clientHeight);
+subHome.style.height = "0";
+
 inpSubHome.addEventListener("click", () => {
-  subHome.classList.toggle("absolute");
-  subHome.classList.toggle("invisible");
-  subHome.classList.toggle("opacity-0");
-  inpSubHome.classList.toggle("after:rotate-180");
-  inpSubHome.classList.toggle("after:origin-top");
+  if (subHome.style.height === "0px") {
+    subHome.style.height = subHome.getAttribute("data-h") + "px";
+    inpSubHome.classList.add("after:rotate-180"); // کلاسی برای after
+  } else {
+    subHome.style.height = "0";
+    inpSubHome.classList.remove("after:rotate-180");
+  }
 });
 
 // Explore submenu
 let inpSubExplore = document.getElementById("inpSubExplore");
 let subExplore = document.getElementById("subExplore");
 
+subExplore.setAttribute("data-h", subExplore.clientHeight);
+subExplore.style.height = "0";
+
 inpSubExplore.addEventListener("click", () => {
-  subExplore.classList.toggle("absolute");
-  subExplore.classList.toggle("invisible");
-  subExplore.classList.toggle("opacity-0");
-  inpSubExplore.classList.toggle("after:rotate-180");
-  inpSubExplore.classList.toggle("after:origin-top");
+  if (subExplore.style.height === "0px") {
+    subExplore.style.height = subExplore.getAttribute("data-h") + "px";
+    inpSubExplore.classList.add("after:rotate-180");
+  } else {
+    subExplore.style.height = "0";
+    inpSubExplore.classList.remove("after:rotate-180");
+  }
 });
 
 let inpMobMenu = document.getElementById("inpMobMenu");
