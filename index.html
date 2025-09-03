@@ -1,724 +1,859 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parsa</title>
-    <link rel="stylesheet" href="src/style/output.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-  </head>
-  <body class="bg-[#070a29] lightMode zendots">
-    <!----------------------------------------- nav -------------------------------->
-    <nav
-      class="flex items-center justify-between py-5 px-4 transform-3d perspective-midrange 2xl:container mx-auto"
-    >
-      <!-- logo -->
-      <div class="flex justify-start w-[30%] lg:w-[15%]">
-        <figure class="flex justify-center items-center">
-          <img src="src/images/imgi_1_logo-01.png" alt="logo" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parsa</title>
+  <link rel="stylesheet" href="src/style/output.css" />
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body class="bg-[#070a29] lightMode zendots">
+  <!----------------------------------------- nav -------------------------------->
+  <nav class="flex items-center justify-between py-5 px-4 transform-3d perspective-midrange 2xl:container mx-auto">
+    <!-- logo -->
+    <div class="flex justify-start w-[30%] lg:w-[15%]">
+      <figure class="flex justify-center items-center">
+        <img src="src/images/imgi_1_logo-01.png" alt="logo" />
+      </figure>
+    </div>
+
+    <!-- dark mode and light mode -->
+    <div class="w-[30%] flex justify-center lg:order-3 lg:w-[8%]">
+      <figure id="drkLt" class="flex justify-center items-center w-[60px] h-[60px] rounded-2xl bg-[#703ffe]">
+        <img id="imgDrkLt" class="w-[70%] h-[70%]" src="src/images/darkModeBlack.png" alt="" />
+      </figure>
+    </div>
+
+    <!-- menu -->
+    <div id="inpMobMenu" class="w-[30%] flex justify-end lg:hidden">
+      <div class="w-[50px] h-[50px] flex justify-center items-center rounded-xl bgFav duration-500">
+        <figure class="w-[80%] h-[80%]">
+          <img class="w-full h-full" src="src/images/whiteMenu.png" alt="" />
         </figure>
       </div>
-
-      <!-- dark mode and light mode -->
-      <div class="w-[30%] flex justify-center lg:order-3 lg:w-[8%]">
-        <figure
-          id="drkLt"
-          class="flex justify-center items-center w-[60px] h-[60px] rounded-2xl bg-[#703ffe]"
-        >
-          <img
-            id="imgDrkLt"
-            class="w-[70%] h-[70%]"
-            src="src/images/darkModeBlack.png"
-            alt=""
-          />
+    </div>
+    <!-- links -->
+    <div class="w-[65%] hidden lg:flex">
+      <ul class="flex justify-around gap-5 w-full *:text-[15px]">
+        <li class="group relative cursor-pointer">
+          <a class="group-hover:text-[#703FFE] duration-500 relative after:content-[] after:absolute after:left-[90%] after:top-1/2 after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-[#fff0] after:border-t-white after:border-l-[#fff0] after:border-r-[#fff0] group-hover:after:border-t-[#703FFE] after:duration-500 p-2"
+            href="">Home
+          </a>
+          <ul
+            class="absolute cursor-pointer duration-500 invisible opacity-0 top-[170%] w-[200px] bg-white **:pl-3 **:py-3 **:text-black rounded-lg after:content-[] after:absolute after:left-[25%] after:top-[-10.5%] after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-white after:border-t-[#fff0] after:border-l-[#fff0] after:border-r-[#fff0] after:duration-500 group-hover:visible group-hover:opacity-100 group-hover:after:visible group-hover:after:opacity-100">
+            <li
+              class="border-b border-b-gray-200 duration-300 hover:*:text-[#703FFE] hover:*:duration-300 hover:bg-gray-100 rounded-lg">
+              <a href="">Home 01</a>
+            </li>
+            <li
+              class="border-b border-b-gray-200 duration-300 hover:*:text-[#703FFE] hover:*:duration-300 hover:bg-gray-100">
+              <a href="">Home 02</a>
+            </li>
+            <li class="duration-300 hover:*:text-[#703FFE] hover:*:duration-300 hover:bg-gray-1">
+              <a href="">Home 03</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="">About</a></li>
+        <li><a href="">Road Map</a></li>
+        <li><a href="">Team</a></li>
+        <li class="group relative cursor-pointer">
+          <a class="group-hover:text-[#703FFE] duration-500 relative after:content-[] after:absolute after:left-[90%] after:top-1/2 after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-[#fff0] after:border-t-white after:border-l-[#fff0] after:border-r-[#fff0] group-hover:after:border-t-[#703FFE] after:duration-500 p-2"
+            href="">Explore
+          </a>
+          <ul
+            class="absolute cursor-pointer duration-500 invisible opacity-0 top-[170%] w-[300px] bg-white **:pl-3 **:py-3 **:text-black rounded-lg after:content-[] after:absolute after:left-[25%] after:top-[-10.5%] after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-white after:border-t-[#fff0] after:border-l-[#fff0] after:border-r-[#fff0] after:duration-500 group-hover:visible group-hover:opacity-100 group-hover:after:visible group-hover:after:opacity-100">
+            <li
+              class="border-b border-b-gray-200 duration-300 hover:*:text-[#703FFE] hover:*:duration-300 hover:bg-gray-100 rounded-lg">
+              <a href="">visions & missions</a>
+            </li>
+            <li
+              class="border-b border-b-gray-200 duration-300 hover:*:text-[#703FFE] hover:*:duration-300 hover:bg-gray-100">
+              <a href="">Partners & Investors</a>
+            </li>
+            <li class="duration-300 hover:*:text-[#703FFE] hover:*:duration-300 hover:bg-gray-1">
+              <a href="">Advisors & Backers</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="">Bug List</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--------------------------------- mobile menu -------------------------------->
+  <section id="mobMenu" class="w-full h-fit fix lg:hidden bg-[#131313ab] absolute top-0 right-full duration-300 z-[60]">
+    <!-- close button -->
+    <div id="closebtn" class="absolute right-4 top-6">
+      <div class="w-[50px] h-[50px] flex justify-center items-center rounded-xl bgFav duration-500">
+        <figure class="w-[80%] h-[80%]">
+          <img class="w-full h-full hover:rotate-180 duration-500" src="src/images/close.png" alt="" />
         </figure>
       </div>
-
-      <!-- menu -->
-      <div id="inpMobMenu" class="w-[30%] flex justify-end lg:hidden">
+    </div>
+    <!-- left side menu -->
+    <div class="w-[250px] min-h-[100vh] bg-[#0a0a0a]">
+      <figure class="w-full h-[80px] flex justify-start items-center border-b-1 border-b-[#3f3f3f54]">
+        <img class="pl-5" src="src/images/imgi_1_logo-01.png" alt="" />
+      </figure>
+      <ul class="flex flex-col **:text-[15px] **:cursor-pointer *:border-b-1 *:border-b-[#3f3f3f54]">
+        <!-- home button -->
+        <li id="inpSubHome"
+          class="duration-500 relative after:content-[] after:absolute after:right-[20px] after:top-[30px] after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-[#fff0] after:border-t-white after:border-l-[#fff0] after:border-r-[#fff0] after:duration-300">
+          <a class="px-5 w-full h-full flex py-4 border-b-1 border-b-[#3f3f3f54] hoverFav" href="#">Home</a>
+          <ul id="subHome"
+            class="flex flex-col absolute invisible opacity-0 **:py-4 **:px-6 **:text-[15px] **:cursor-pointer *:border-b-1 *:border-b-[#3f3f3f54] duration-300">
+            <li>
+              <a class="hoverFav duration-500" href="#">Home 01</a>
+            </li>
+            <li>
+              <a class="hoverFav" href="#">Home 02</a>
+            </li>
+            <li>
+              <a class="hoverFav" href="#">Home 03</a>
+            </li>
+          </ul>
+        </li>
+        <li class="hoverFav">
+          <a class="px-5 w-full h-full flex py-4" href="">About</a>
+        </li>
+        <li class="hoverFav">
+          <a class="px-5 w-full h-full flex py-4" href="">Road Map</a>
+        </li>
+        <li class="hoverFav">
+          <a class="px-5 w-full h-full flex py-4" href="">Team</a>
+        </li>
+        <li id="inpSubExplore"
+          class="duration-500 relative after:content-[] after:absolute after:right-[20px] after:top-[30px] after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-[#fff0] after:border-t-white after:border-l-[#fff0] after:border-r-[#fff0] after:duration-300">
+          <a class="px-5 w-full h-full flex py-4 border-b-1 border-b-[#3f3f3f54] hoverFav" href="#">Explore</a>
+          <ul id="subExplore"
+            class="flex flex-col absolute invisible opacity-0 **:py-4 **:pl-6 **:text-[15px] **:cursor-pointer *:border-b-1 *:border-b-[#3f3f3f54] duration-300">
+            <li>
+              <a class="hoverFav duration-500" href="#">vision & mission</a>
+            </li>
+            <li>
+              <a class="hoverFav" href="#">Partner & Investor</a>
+            </li>
+            <li>
+              <a class="hoverFav" href="#">Advistor & Backers</a>
+            </li>
+          </ul>
+        </li>
+        <li class="*:hover:text-[#703FFE] *:duration-500">
+          <a class="px-5 w-full h-full flex py-4" href="">Bog List</a>
+        </li>
+        <li class="hoverFav">
+          <a class="px-5 w-full h-full flex py-4" href="">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!---------------------------------- main ----------------------------------->
+  <main class="w-full 2xl:container 2xl:mx-auto">
+    <!----------------------------------- row first ----------------------------->
+    <div class="w-full flex flex-wrap justify-around">
+      <!-- left side -->
+      <div class="w-full md:w-[45%] px-4 py-8">
+        <h1 class="text-4xl md:text-[45px] lg:text-6xl lg:mt-20 lg:leading-20 md:w-[100%] w-[80%]">
+          Collect Next Generation
+          <span class="text-[#b392ff]">NFTs</span>
+          <br class="hidden lg:flex" />
+          Today
+        </h1>
+        <p class="mb-4 md:mb-9 lg:mb-12 lg:mt-10 readex">
+          Cyfonii is the premier marketplace for nifties, which are digital
+          items you can truly own for yourself
+        </p>
+        <!-- button -->
         <div
-          class="w-[50px] h-[50px] flex justify-center items-center rounded-xl bgFav duration-500"
-        >
-          <figure class="w-[80%] h-[80%]">
-            <img class="w-full h-full" src="src/images/whiteMenu.png" alt="" />
-          </figure>
+          class="w-[210px] h-[66px] flex justify-center items-center rounded-xl bg-[#ffffff15] border border-[#dadada1e]">
+          <div class="btnFav">Get Conected</div>
+        </div>
+        <!-- txt -->
+        <h5 class="text-[15px] mt-6 lg:mt-16 mb-3">We are Monteno NFT</h5>
+        <div class="lg:flex gap-6 items-center">
+          <h2 class="readex text-[14px] text-[#52546a]">We accept:</h2>
+          <!-- icons -->
+          <div class="flex gap-3 mt-4 lg:mt-0">
+            <i
+              class="fa-brands fa-bitcoin text-[#52546a] text-4xl cursor-pointer hover:text-[#703FFE] duration-300"></i>
+            <i
+              class="fa-brands fa-ethereum text-[#52546a] text-4xl cursor-pointer hover:text-[#703FFE] duration-300"></i>
+            <i class="fab fa-stripe text-[#52546a] text-4xl cursor-pointer hover:text-[#703FFE] duration-300"></i>
+            <i
+              class="fa-brands fa-bitcoin text-[#52546a] text-4xl cursor-pointer hover:text-[#703FFE] duration-300"></i>
+            <i
+              class="fa-brands fa-ethereum text-[#52546a] text-4xl cursor-pointer hover:text-[#703FFE] duration-300"></i>
+            <i class="fab fa-stripe text-[#52546a] text-4xl cursor-pointer hover:text-[#703FFE] duration-300"></i>
+          </div>
         </div>
       </div>
-      <!-- links -->
-      <div class="w-[65%] hidden lg:flex">
-        <ul class="flex justify-around gap-5 w-full *:text-[15px]">
-          <li class="group relative cursor-pointer">
-            <a
-              class="group-hover:text-[#703FFE] duration-500 relative after:content-[] after:absolute after:left-[90%] after:top-1/2 after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-[#fff0] after:border-t-white after:border-l-[#fff0] after:border-r-[#fff0] group-hover:after:border-t-[#703FFE] after:duration-500 p-2"
-              href=""
-              >Home
-            </a>
-            <ul
-              class="absolute cursor-pointer duration-500 invisible opacity-0 top-[170%] w-[200px] bg-white **:pl-3 **:py-3 **:text-black rounded-lg after:content-[] after:absolute after:left-[25%] after:top-[-10.5%] after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-white after:border-t-[#fff0] after:border-l-[#fff0] after:border-r-[#fff0] after:duration-500 group-hover:visible group-hover:opacity-100 group-hover:after:visible group-hover:after:opacity-100"
-            >
-              <li
-                class="border-b border-b-gray-200 duration-300 hover:*:text-[#703FFE] hover:*:duration-300 hover:bg-gray-100 rounded-lg"
-              >
-                <a href="">Home 01</a>
-              </li>
-              <li
-                class="border-b border-b-gray-200 duration-300 hover:*:text-[#703FFE] hover:*:duration-300 hover:bg-gray-100"
-              >
-                <a href="">Home 02</a>
-              </li>
-              <li
-                class="duration-300 hover:*:text-[#703FFE] hover:*:duration-300 hover:bg-gray-1"
-              >
-                <a href="">Home 03</a>
-              </li>
-            </ul>
-          </li>
-          <li><a href="">About</a></li>
-          <li><a href="">Road Map</a></li>
-          <li><a href="">Team</a></li>
-          <li class="group relative cursor-pointer">
-            <a
-              class="group-hover:text-[#703FFE] duration-500 relative after:content-[] after:absolute after:left-[90%] after:top-1/2 after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-[#fff0] after:border-t-white after:border-l-[#fff0] after:border-r-[#fff0] group-hover:after:border-t-[#703FFE] after:duration-500 p-2"
-              href=""
-              >Explore
-            </a>
-            <ul
-              class="absolute cursor-pointer duration-500 invisible opacity-0 top-[170%] w-[300px] bg-white **:pl-3 **:py-3 **:text-black rounded-lg after:content-[] after:absolute after:left-[25%] after:top-[-10.5%] after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-white after:border-t-[#fff0] after:border-l-[#fff0] after:border-r-[#fff0] after:duration-500 group-hover:visible group-hover:opacity-100 group-hover:after:visible group-hover:after:opacity-100"
-            >
-              <li
-                class="border-b border-b-gray-200 duration-300 hover:*:text-[#703FFE] hover:*:duration-300 hover:bg-gray-100 rounded-lg"
-              >
-                <a href="">visions & missions</a>
-              </li>
-              <li
-                class="border-b border-b-gray-200 duration-300 hover:*:text-[#703FFE] hover:*:duration-300 hover:bg-gray-100"
-              >
-                <a href="">Partners & Investors</a>
-              </li>
-              <li
-                class="duration-300 hover:*:text-[#703FFE] hover:*:duration-300 hover:bg-gray-1"
-              >
-                <a href="">Advisors & Backers</a>
-              </li>
-            </ul>
-          </li>
-          <li><a href="">Bug List</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
+      <!-- right side -->
+      <div class="w-full relative overflow-hidden py-20 md:w-[45%] px-2 md:py-5">
+        <!-- under image -->
+        <figure class="absolute md:-top-8 top-5 md:h md:right-0 right-5 z-40 rotate-[25deg] w-full h-full">
+          <img class="w-[100%]" src="src/images/bgimage.png" alt="" />
+        </figure>
+        <!-- image -->
+        <figure class="w-full h-full">
+          <img class="w-[95%] mx-auto relative z-50 object-cover" src="src/images/img1.png" alt="" />
+        </figure>
       </div>
-    </nav>
-    <!--------------------------------- mobile menu -------------------------------->
-    <section
-      id="mobMenu"
-      class="w-full h-fit fix lg:hidden bg-[#131313ab] absolute top-0 right-full duration-300 z-[60]"
-    >
-      <!-- close button -->
-      <div id="closebtn" class="absolute right-4 top-6">
+    </div>
+    <!------------------------- row second ------------------>
+    <div class="w-full flex flex-wrap justify-around overflow-hidden">
+      <!-- left side -->
+      <div class="w-full relative py-20 md:w-[45%]">
+        <!-- under image -->
+        <figure class="absolute top-10 md:h left-[65%] -translate-x-1/2 z-20 rotate-[2deg] w-full h-full">
+          <img class="w-[70%]" src="src/images/bgimage2.png" alt="" />
+        </figure>
+        <!-- image -->
+        <figure class="w-full h-full relative z-30">
+          <img class="w-[65%] lg:w-[80%] mx-auto relative z-30 object-cover duration-300 hover:-translate-y-3"
+            src="src/images/img2.png" alt="" />
+        </figure>
+        <!-- on image -->
+        <figure
+          class="absolute hidden lg:flex bottom-10 md:h left-[35%] rounded-4xl overflow-hidden -translate-x-1/2 z-50 w-[65%] h-[55%] duration-300 hover:-translate-y-3">
+          <img class="w-[100%] h-[100%] object-cover" src="src/images/img3.jpg" alt="" />
+        </figure>
+        <!-- on image 2 -->
+        <figure
+          class="absolute hidden lg:flex bottom-0 md:h left-[75%] rounded-4xl overflow-hidden -translate-x-1/2 z-[40] w-[40%] h-[30%] duration-300 hover:-translate-y-3">
+          <img class="w-[100%] h-[100%] object-cover" src="src/images/img4.png" alt="" />
+        </figure>
+      </div>
+      <!-- right side -->
+      <div class="w-full md:w-[50%] px-4 py-8 md:mt-14 lg:mt-20">
+        <button class="txtFav py-1.5 px-6 btnFav2 mb-4">About Us</button>
+        <h1 class="text-[28px] w-[95%] lg:text-[50px] lg:w-[70%]">
+          Hight Quality NFT Collections
+        </h1>
+        <p class="mt-3 text-[14px] readex">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod
+          tempor incididunt ut labore et
+        </p>
+        <p class="mt-10 md:mt-5 text-[14px] readex">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+        </p>
+        <!-- button -->
         <div
-          class="w-[50px] h-[50px] flex justify-center items-center rounded-xl bgFav duration-500"
-        >
-          <figure class="w-[80%] h-[80%]">
-            <img
-              class="w-full h-full hover:rotate-180 duration-500"
-              src="src/images/close.png"
-              alt=""
-            />
-          </figure>
+          class="w-[210px] h-[66px] flex justify-center items-center rounded-xl bg-[#ffffff15] border border-[#dadada1e] mt-6">
+          <div class="btnFav">Get Conected</div>
         </div>
       </div>
-      <!-- left side menu -->
-      <div class="w-[250px] min-h-[100vh] bg-[#0a0a0a]">
-        <figure
-          class="w-full h-[80px] flex justify-start items-center border-b-1 border-b-[#3f3f3f54]"
-        >
-          <img class="pl-5" src="src/images/imgi_1_logo-01.png" alt="" />
-        </figure>
-        <ul
-          class="flex flex-col **:text-[15px] **:cursor-pointer *:border-b-1 *:border-b-[#3f3f3f54]"
-        >
-          <!-- home button -->
-          <li
-            id="inpSubHome"
-            class="duration-500 relative after:content-[] after:absolute after:right-[20px] after:top-[30px] after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-[#fff0] after:border-t-white after:border-l-[#fff0] after:border-r-[#fff0] after:duration-300"
-          >
-            <a
-              class="px-5 w-full h-full flex py-4 border-b-1 border-b-[#3f3f3f54] hoverFav"
-              href="#"
-              >Home</a
-            >
-            <ul
-              id="subHome"
-              class="flex flex-col absolute invisible opacity-0 **:py-4 **:px-6 **:text-[15px] **:cursor-pointer *:border-b-1 *:border-b-[#3f3f3f54] duration-300"
-            >
-              <li>
-                <a class="hoverFav duration-500" href="#">Home 01</a>
-              </li>
-              <li>
-                <a class="hoverFav" href="#">Home 02</a>
-              </li>
-              <li>
-                <a class="hoverFav" href="#">Home 03</a>
-              </li>
-            </ul>
-          </li>
-          <li class="hoverFav">
-            <a class="px-5 w-full h-full flex py-4" href="">About</a>
-          </li>
-          <li class="hoverFav">
-            <a class="px-5 w-full h-full flex py-4" href="">Road Map</a>
-          </li>
-          <li class="hoverFav">
-            <a class="px-5 w-full h-full flex py-4" href="">Team</a>
-          </li>
-          <li
-            id="inpSubExplore"
-            class="duration-500 relative after:content-[] after:absolute after:right-[20px] after:top-[30px] after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-[#fff0] after:border-t-white after:border-l-[#fff0] after:border-r-[#fff0] after:duration-300"
-          >
-            <a
-              class="px-5 w-full h-full flex py-4 border-b-1 border-b-[#3f3f3f54] hoverFav"
-              href="#"
-              >Explore</a
-            >
-            <ul
-              id="subExplore"
-              class="flex flex-col absolute invisible opacity-0 **:py-4 **:pl-6 **:text-[15px] **:cursor-pointer *:border-b-1 *:border-b-[#3f3f3f54] duration-300"
-            >
-              <li>
-                <a class="hoverFav duration-500" href="#">vision & mission</a>
-              </li>
-              <li>
-                <a class="hoverFav" href="#">Partner & Investor</a>
-              </li>
-              <li>
-                <a class="hoverFav" href="#">Advistor & Backers</a>
-              </li>
-            </ul>
-          </li>
-          <li class="*:hover:text-[#703FFE] *:duration-500">
-            <a class="px-5 w-full h-full flex py-4" href="">Bog List</a>
-          </li>
-          <li class="hoverFav">
-            <a class="px-5 w-full h-full flex py-4" href="">Contact</a>
-          </li>
-        </ul>
+    </div>
+    <!---------------------------------- Our Speciality ---------------------------->
+    <section class="mt-12">
+      <!-- top -->
+      <div class="w-full">
+        <button class="btnFav2 px-6 py-1 flex mx-auto">Our Speciality</button>
+        <h2 class="text-[28px] md:mt-6 w-[90%] md:w-[60%] md:text-3xl lg:text-[50px] mx-auto text-center px-2 mt-2">
+          Complete Solutions for your NFT
+        </h2>
+        <p class="text-center md:w-[60%] lg:w-[40%] md:mt-6 readex text-[14px] mt-2 mx-auto">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod
+          tempor incididunt ut labore et
+        </p>
+      </div>
+      <!-- bottom section -->
+      <section
+        class="w-full pt-[90px] flex flex-wrap justify-center md:justify-around lg:justify-center gap-30 items-center md:gap-0 md:pt-[150px] md:gap-y-36 lg:gap-5 mb-32">
+        <!-- 01 -->
+        <div class="w-[95%] md:w-[47%] lg:w-[23%] xl:w-[20%] bgGlass relative mx-auto">
+          <!-- icon -->
+          <div
+            class="w-[104px] h-[104px] bgFav rounded-full flex justify-center items-center hover:rotate-y-180 duration-500 absolute left-[50%] -top-[60%] translate-y-1/2 -translate-x-1/2">
+            <figure class="w-[56px] h-[56px]">
+              <img class="w-full h-full" src="src/images/icon1.png" alt="" />
+            </figure>
+          </div>
+          <h4 class="flex justify-center lg:text-xl cursor-pointer duration-300 hover:text-[#703FFE]">
+            Huge Collection
+          </h4>
+          <p class="w-full flex justify-center text-center readex text-sm mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          </p>
+          <h2 class="text-[28px] text-[#20233f] flex justify-center mt-3">
+            01
+          </h2>
+        </div>
+        <!-- 02 -->
+        <div class="w-[95%] md:w-[47%] lg:w-[23%] xl:w-[20%] bgGlass relative mx-auto">
+          <!-- icon -->
+          <div
+            class="w-[104px] h-[104px] bgFav rounded-full flex justify-center items-center hover:rotate-y-180 duration-500 absolute left-[50%] -top-[60%] translate-y-1/2 -translate-x-1/2">
+            <figure class="w-[56px] h-[56px]">
+              <img class="w-full h-full" src="src/images/icon2.png" alt="" />
+            </figure>
+          </div>
+          <h4 class="flex justify-center lg:text-xl cursor-pointer duration-300 hover:text-[#703FFE]">
+            High Quality
+          </h4>
+          <p class="w-full flex justify-center text-center readex text-sm mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          </p>
+          <h2 class="text-[28px] text-[#20233f] flex justify-center mt-3">
+            02
+          </h2>
+        </div>
+        <!-- 03 -->
+        <div class="w-[95%] md:w-[47%] lg:w-[23%] xl:w-[20%] bgGlass relative mx-auto">
+          <!-- icon -->
+          <div
+            class="w-[104px] h-[104px] bgFav rounded-full flex justify-center items-center hover:rotate-y-180 duration-500 absolute left-[50%] -top-[60%] translate-y-1/2 -translate-x-1/2">
+            <figure class="w-[56px] h-[56px]">
+              <img class="w-full h-full" src="src/images/icon3.png" alt="" />
+            </figure>
+          </div>
+          <h4 class="flex justify-center lg:text-xl cursor-pointer duration-300 hover:text-[#703FFE]">
+            Top Resource
+          </h4>
+          <p class="w-full flex justify-center text-center readex text-sm mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          </p>
+          <h2 class="text-[28px] text-[#20233f] flex justify-center mt-3">
+            03
+          </h2>
+        </div>
+        <!-- 04 -->
+        <div class="w-[95%] md:w-[47%] lg:w-[23%] xl:w-[20%] bgGlass relative mx-auto">
+          <!-- icon -->
+          <div
+            class="w-[104px] h-[104px] bgFav rounded-full flex justify-center items-center hover:rotate-y-180 duration-500 absolute left-[50%] -top-[60%] translate-y-1/2 -translate-x-1/2">
+            <figure class="w-[56px] h-[56px]">
+              <img class="w-full h-full" src="src/images/icon4.png" alt="" />
+            </figure>
+          </div>
+          <h4 class="flex justify-center lg:text-xl cursor-pointer duration-300 hover:text-[#703FFE]">
+            Big Community
+          </h4>
+          <p class="w-full flex justify-center text-center readex text-sm mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          </p>
+          <h2 class="text-[28px] text-[#20233f] flex justify-center mt-3">
+            04
+          </h2>
+        </div>
+      </section>
+    </section>
+    <!----------------------------------- Join NFT Portfolio ---------------------->
+    <section class="mt-12">
+      <!-- top -->
+      <div class="w-full">
+        <button class="btnFav2 px-6 py-1 flex mx-auto">
+          Join NFT Portfolio
+        </button>
+        <h2
+          class="text-[28px] md:mt-6 w-[95%] md:w-[60%] lg:w-[50%] md:text-3xl lg:text-[50px] mx-auto text-center px-2 mt-2">
+          Become a Cyfonii Player Now
+        </h2>
+      </div>
+      <!-- bottom -->
+      <div class="w-full mt-20 md:flex md:flex-wrap md:justify-around">
+        <!-- left -->
+        <div class="w-full h-fit pb-3 md:w-[45%] flex flex-wrap gap-20 justify-center mb-16 md:mb-0">
+          <!-- step 1 -->
+          <div class="w-[95%] bgGlass relative mx-auto">
+            <!-- icon -->
+            <div
+              class="w-[77px] h-[30px] btnFav2 rounded-full flex justify-center items-center hover:rotate-y-180 duration-500 absolute left-[15%] bottom-[100%] translate-y-1/2 -translate-x-1/2">
+              <h6>step 1</h6>
+            </div>
+            <!-- box -->
+            <div class="flex flex-wrap items-center">
+              <div class="w-full md:w-[10%]">
+                <!-- icon -->
+                <figure class="w-10 h-10">
+                  <img class="w-full h-full" src="src/images/icon5.png" alt="" />
+                </figure>
+              </div>
+              <!-- text -->
+              <div class="pt-2.5 w-full lg:w-[80%] lg:border-l lg:border-l-[#dadada1e] lg:pl-3">
+                <h4 class="flex justify-start lg:text-xl cursor-pointer duration-300 hover:text-[#703FFE]">
+                  Huge Collection
+                </h4>
+                <p class="w-full flex justify-start text-start readex text-sm pt-2.5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- step 2 -->
+          <div class="w-[95%] bgGlass relative mx-auto">
+            <!-- icon -->
+            <div
+              class="w-[77px] h-[30px] btnFav2 rounded-full flex justify-center items-center hover:rotate-y-180 duration-500 absolute left-[15%] bottom-[100%] translate-y-1/2 -translate-x-1/2">
+              <h6>step 2</h6>
+            </div>
+            <!-- box -->
+            <div class="flex flex-wrap items-center">
+              <div class="w-full md:w-[10%]">
+                <!-- icon -->
+                <figure class="w-10 h-10">
+                  <img class="w-full h-full" src="src/images/icon6.png" alt="" />
+                </figure>
+              </div>
+              <!-- text -->
+              <div class="pt-2.5 w-full lg:w-[80%] lg:border-l lg:border-l-[#dadada1e] lg:pl-3">
+                <h4 class="flex justify-start lg:text-xl cursor-pointer duration-300 hover:text-[#703FFE]">
+                  Buy your NFT
+                </h4>
+                <p class="w-full flex justify-start text-start readex text-sm pt-2.5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- step 3 -->
+          <div class="w-[95%] bgGlass relative mx-auto">
+            <!-- icon -->
+            <div
+              class="w-[77px] h-[30px] btnFav2 rounded-full flex justify-center items-center hover:rotate-y-180 duration-500 absolute left-[15%] bottom-[100%] translate-y-1/2 -translate-x-1/2">
+              <h6>step 3</h6>
+            </div>
+            <!-- box -->
+            <div class="flex flex-wrap items-center">
+              <div class="w-full md:w-[10%]">
+                <!-- icon -->
+                <figure class="w-10 h-10">
+                  <img class="w-full h-full" src="src/images/icon7.png" alt="" />
+                </figure>
+              </div>
+              <!-- text -->
+              <div class="pt-2.5 w-full lg:w-[80%] lg:border-l lg:border-l-[#dadada1e] lg:pl-3">
+                <h4 class="flex justify-start lg:text-xl cursor-pointer duration-300 hover:text-[#703FFE]">
+                  Create collection
+                </h4>
+                <p class="w-full flex justify-start text-start readex text-sm pt-2.5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- step 4 -->
+          <div class="w-[95%] bgGlass relative mx-auto">
+            <!-- icon -->
+            <div
+              class="w-[77px] h-[30px] btnFav2 rounded-full flex justify-center items-center hover:rotate-y-180 duration-500 absolute left-[15%] bottom-[100%] translate-y-1/2 -translate-x-1/2">
+              <h6>step 4</h6>
+            </div>
+            <!-- box -->
+            <div class="flex flex-wrap items-center">
+              <div class="w-full md:w-[10%]">
+                <!-- icon -->
+                <figure class="w-10 h-10">
+                  <img class="w-full h-full" src="src/images/icon8.png" alt="" />
+                </figure>
+              </div>
+              <!-- text -->
+              <div class="pt-2.5 w-full lg:w-[80%] lg:border-l lg:border-l-[#dadada1e] lg:pl-3">
+                <h4 class="flex justify-start lg:text-xl cursor-pointer duration-300 hover:text-[#703FFE]">
+                  Sell your NFT
+                </h4>
+                <p class="w-full flex justify-start text-start readex text-sm pt-2.5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right -->
+        <div class="w-full md:w-[45%]">
+          <figure class="w-full h-full">
+            <img class="w-full h-full object-cover" src="src/images/img5.png" alt="" />
+          </figure>
+        </div>
       </div>
     </section>
-    <!---------------------------------- main ----------------------------------->
-    <main class="w-full 2xl:container 2xl:mx-auto">
-      <!----------------------------------- row first ----------------------------->
-      <div class="w-full flex flex-wrap justify-around">
-        <!-- left side -->
-        <div class="w-full md:w-[45%] px-4 py-8">
-          <h1
-            class="text-4xl md:text-[45px] lg:text-6xl lg:mt-20 lg:leading-20 md:w-[100%] w-[80%]"
-          >
-            Collect Next Generation
-            <span class="text-[#b392ff]">NFTs</span>
-            <br class="hidden lg:flex" />
-            Today
-          </h1>
-          <p class="mb-4 md:mb-9 lg:mb-12 lg:mt-10 readex">
-            Cyfonii is the premier marketplace for nifties, which are digital
-            items you can truly own for yourself
-          </p>
-          <!-- button -->
-          <div
-            class="w-[210px] h-[66px] flex justify-center items-center rounded-xl bg-[#ffffff15] border border-[#dadada1e]"
-          >
-            <div class="btnFav">Get Conected</div>
-          </div>
-          <!-- txt -->
-          <h5 class="text-[15px] mt-6 lg:mt-16 mb-3">We are Monteno NFT</h5>
-          <div class="lg:flex gap-6 items-center">
-            <h2 class="readex text-[14px] text-[#52546a]">We accept:</h2>
-            <!-- icons -->
-            <div class="flex gap-3 mt-4 lg:mt-0">
-              <i
-                class="fa-brands fa-bitcoin text-[#52546a] text-4xl cursor-pointer hover:text-[#703FFE] duration-300"
-              ></i>
-              <i
-                class="fa-brands fa-ethereum text-[#52546a] text-4xl cursor-pointer hover:text-[#703FFE] duration-300"
-              ></i>
-              <i
-                class="fab fa-stripe text-[#52546a] text-4xl cursor-pointer hover:text-[#703FFE] duration-300"
-              ></i>
-              <i
-                class="fa-brands fa-bitcoin text-[#52546a] text-4xl cursor-pointer hover:text-[#703FFE] duration-300"
-              ></i>
-              <i
-                class="fa-brands fa-ethereum text-[#52546a] text-4xl cursor-pointer hover:text-[#703FFE] duration-300"
-              ></i>
-              <i
-                class="fab fa-stripe text-[#52546a] text-4xl cursor-pointer hover:text-[#703FFE] duration-300"
-              ></i>
-            </div>
-          </div>
+    <!-- Our Speciality -->
+    <section class="mt-12">
+      <!-- top -->
+      <div class="w-full">
+        <button class="btnFav2 px-6 py-1 flex mx-auto">Our Speciality</button>
+        <h2
+          class="text-[28px] md:mt-6 w-[95%] md:w-[60%] lg:w-[50%] md:text-3xl lg:text-[50px] mx-auto text-center px-2 mt-2">
+          OUR COLLECTION
+        </h2>
+      </div>
+      <!-- slider -->
+      <div class="w-full mt-5">
+        <div class="w-full flex gap-5 pl-5 overflow-hidden">
+          <!-- card 1 -->
+          <figure
+            class="w-[90%] md:w-[45%] lg:w-[30%] h-[450px] mx-auto flex justify-center items-center rounded-3xl bg-[#ffffff15] border border-[#dadada1e] relative shrink-0">
+            <img class="w-[90%] h-[90%] object-cover rounded-[55px]" src="src/images/img6.jpg" alt="" />
+            <button
+              class="w-[90%] h-[60px] absolute bottom-[7%] rounded-2xl bg-[#ffffff15] border border-[#dadada1e] hover:bg-white duration-500 hover:text-[#703ffe] cursor-pointer">
+              3D Digital ArtWork
+            </button>
+          </figure>
+          <!-- card 2 -->
+          <figure
+            class="w-[90%] md:w-[45%] lg:w-[30%] h-[450px] mx-auto flex justify-center items-center rounded-3xl bg-[#ffffff15] border border-[#dadada1e] relative shrink-0">
+            <img class="w-[90%] h-[90%] object-cover rounded-[55px]" src="src/images/img7.png" alt="" />
+            <button
+              class="w-[90%] h-[60px] absolute bottom-[7%] rounded-2xl bg-[#ffffff15] border border-[#dadada1e] hover:bg-white duration-500 hover:text-[#703ffe] cursor-pointer">
+              3D Digital ArtWork
+            </button>
+          </figure>
+          <!-- card 3 -->
+          <figure
+            class="w-[90%] md:w-[45%] lg:w-[30%] h-[450px] mx-auto flex justify-center items-center rounded-3xl bg-[#ffffff15] border border-[#dadada1e] relative shrink-0">
+            <img class="w-[90%] h-[90%] object-cover rounded-[55px]" src="src/images/img8.png" alt="" />
+            <button
+              class="w-[90%] h-[60px] absolute bottom-[7%] rounded-2xl bg-[#ffffff15] border border-[#dadada1e] hover:bg-white duration-500 hover:text-[#703ffe] cursor-pointer">
+              3D Digital ArtWork
+            </button>
+          </figure>
         </div>
-        <!-- right side -->
+        <div></div>
+      </div>
+    </section>
+    <!--------------------------second half of the website------------------------------->
+
+    <!-- ********road map page******** -->
+    <div class="w-full h-fit flex flex-wrap justify-center items-center">
+      <!-- --------------------------------header---------------------------------------->
+      <header class="w-full h-fit flex flex-col justify-center items-center my-[50px]">
         <div
-          class="w-full relative overflow-hidden py-20 md:w-[45%] px-2 md:py-5"
-        >
-          <!-- under image -->
-          <figure
-            class="absolute md:-top-8 top-5 md:h md:right-0 right-5 z-40 rotate-[25deg] w-full h-full"
-          >
-            <img class="w-[100%]" src="src/images/bgimage.png" alt="" />
-          </figure>
-          <!-- image -->
-          <figure class="w-full h-full">
-            <img
-              class="w-[95%] mx-auto relative z-50 object-cover"
-              src="src/images/img1.png"
-              alt=""
-            />
-          </figure>
+          class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,_255,_255,_0.050)] border-gray-800 backdrop-blur-2xl flex justify-center items-center mb-[30px]">
+          <h4 class="text-[18px] text-[#703FFE]">Road Map</h4>
+        </div>
+        <h3 class="w-full md:w-[40%] text-2xl md:text-5xl text-[white] text-center mb-[30px]">The Journey of Cyfonii NFT
+        </h3>
+      </header>
+
+      <section class="block md:flex w-10/12 h-[100vh] flex-wrap justify-center items-center">
+        <div class="w-1/2 h-full flex flex-wrap justify-center items-center border-r border-r-gray-800 relative">
+          <!-- -----------------circle start-------------------- -->
+          <span
+            class="size-[10px] rounded-full bg-[#703FFE] absolute top-0 right-0 translate-y-[-50%] translate-x-[50%]"></span>
+          <!-- -----------------circle end---------------------- -->
+          <span
+            class="size-[10px] rounded-full bg-[#703FFE] absolute bottom-0 right-0 translate-y-[50%] translate-x-[50%]"></span>
+          <!-- ------------------box 1(left side)------------------------>
+          <div
+            class="w-[90%] h-[200px] p-[20px] border border-gray-800 rounded-t-3xl flex flex-col justify-center mybg border-b-0 relative">
+            <div
+              class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,255,255,0.07)] border-gray-800 flex justify-center items-center absolute top-0 left-[20px] translate-y-[-50%]">
+              <h4 class="text-[12px] text-[#703FFE]">September 2025</h4>
+            </div>
+            <h6 class="hover:text-[#703FFE] duration-500 cursor-pointer w-[110%] border-b border-b-gray-800 relative">
+              Initial Release
+              <span
+                class="size-[10px] rounded-full bg-[#703FFE] absolute bottom-0 right-0 translate-y-[50%] translate-x-[50%]"></span>
+            </h6>
+            <span class="w-[80px] h-[3px] rounded-2xl bgFav my-5"></span>
+            <p class="simpleFont">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum ipsum repudiandae
+              et,
+              tempora atque ratione quam eveniet accusamus voluptatibus cupiditate?</p>
+          </div>
+          <!-- ------------------box 2------------------------>
+          <div
+            class="w-[90%] h-[200px] p-[20px] border border-gray-800 rounded-t-3xl flex flex-col justify-center mybg border-b-0 relative">
+            <div
+              class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,255,255,0.07)] border-gray-800 flex justify-center items-center absolute top-0 left-[20px] translate-y-[-50%]">
+              <h4 class="text-[12px] text-[#703FFE]">September 2025</h4>
+            </div>
+            <h6 class="hover:text-[#703FFE] duration-500 cursor-pointer w-[110%] border-b border-b-gray-800 relative">
+              Initial Release
+              <span
+                class="size-[10px] rounded-full bg-[#703FFE] absolute bottom-0 right-0 translate-y-[50%] translate-x-[50%]"></span>
+            </h6>
+            <span class="w-[80px] h-[3px] rounded-2xl bgFav my-5"></span>
+            <p class="simpleFont">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum ipsum repudiandae
+              et,
+              tempora atque ratione quam eveniet accusamus voluptatibus cupiditate?</p>
+          </div>
+          <!-- ------------------box 3------------------------>
+          <div
+            class="w-[90%] h-[200px] p-[20px] border border-gray-800 rounded-t-3xl flex flex-col justify-center mybg border-b-0 relative">
+            <div
+              class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,255,255,0.07)] border-gray-800 flex justify-center items-center absolute top-0 left-[20px] translate-y-[-50%]">
+              <h4 class="text-[12px] text-[#703FFE]">September 2025</h4>
+            </div>
+            <h6 class="hover:text-[#703FFE] duration-500 cursor-pointer w-[110%] border-b border-b-gray-800 relative">
+              Design & Development
+              <span
+                class="size-[10px] rounded-full bg-[#703FFE] absolute bottom-0 right-0 translate-y-[50%] translate-x-[50%]"></span>
+            </h6>
+            <span class="w-[80px] h-[3px] rounded-2xl bgFav my-5"></span>
+            <p class="simpleFont">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum ipsum repudiandae
+              et,
+              tempora atque ratione quam eveniet accusamus voluptatibus cupiditate?</p>
+          </div>
+        </div>
+        <!-- ------------------box 4(right side)------------------------>
+        <div class="w-1/2 h-full flex flex-wrap justify-center items-center">
+          <div
+            class="w-[90%] h-[200px] p-[20px] border border-gray-800 rounded-t-3xl flex flex-col justify-center mybg border-b-0 relative">
+            <div
+              class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,255,255,0.07)] border-gray-800 flex justify-center items-center absolute top-0 left-[20px] translate-y-[-50%]">
+              <h4 class="text-[12px] text-[#703FFE]">September 2025</h4>
+            </div>
+            <h6 class="hover:text-[#703FFE] duration-500 cursor-pointer w-[110%] relative">Design & Development
+              <span class="w-[100%] h-[1px] bg-gray-800 absolute bottom-0 left-[-9%]">
+                <span
+                  class="size-[10px] rounded-full bg-[#703FFE] absolute bottom-0 left-0 translate-y-[50%] translate-x-[-50%]"></span></span>
+            </h6>
+            <span class="w-[80px] h-[3px] rounded-2xl bgFav my-5"></span>
+            <p class="simpleFont">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum ipsum repudiandae
+              et,
+              tempora atque ratione quam eveniet accusamus voluptatibus cupiditate?</p>
+          </div>
+          <!-- ------------------box 5------------------------>
+          <div
+            class="w-[90%] h-[200px] p-[20px] border border-gray-800 rounded-t-3xl flex flex-col justify-center mybg border-b-0 relative">
+            <div
+              class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,255,255,0.07)] border-gray-800 flex justify-center items-center absolute top-0 left-[20px] translate-y-[-50%]">
+              <h4 class="text-[12px] text-[#703FFE]">September 2025</h4>
+            </div>
+            <h6 class="hover:text-[#703FFE] duration-500 cursor-pointer w-[110%] relative">Result & Final Report
+              <span class="w-[100%] h-[1px] bg-gray-800 absolute bottom-0 left-[-9%]">
+                <span
+                  class="size-[10px] rounded-full bg-[#703FFE] absolute bottom-0 left-0 translate-y-[50%] translate-x-[-50%]"></span></span>
+            </h6>
+            <span class="w-[80px] h-[3px] rounded-2xl bgFav my-5"></span>
+            <p class="simpleFont">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum ipsum repudiandae
+              et,
+              tempora atque ratione quam eveniet accusamus voluptatibus cupiditate?</p>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------button------------------------>
+      <div class="w-full h-fit flex justify-center items-center my-[50px]">
+        <div
+          class="w-[250px] h-[60px] flex justify-center items-center border border-gray-800 rounded-2xl bg-[rgba(255,255,255,0.07)]">
+          <a href="" class="w-[240px] h-[50px] p-3 bgFav rounded-xl flex justify-center items-center">View Full Road
+            Map</a>
         </div>
       </div>
-      <!------------------------- row second ------------------>
-      <div class="w-full flex flex-wrap justify-around overflow-hidden">
-        <!-- left side -->
-        <div class="w-full relative py-20 md:w-[45%]">
-          <!-- under image -->
-          <figure
-            class="absolute top-10 md:h left-[65%] -translate-x-1/2 z-20 rotate-[2deg] w-full h-full"
-          >
-            <img class="w-[70%]" src="src/images/bgimage2.png" alt="" />
-          </figure>
-          <!-- image -->
-          <figure class="w-full h-full relative z-30">
-            <img
-              class="w-[65%] lg:w-[80%] mx-auto relative z-30 object-cover duration-300 hover:-translate-y-3"
-              src="src/images/img2.png"
-              alt=""
-            />
-          </figure>
-          <!-- on image -->
-          <figure
-            class="absolute hidden lg:flex bottom-10 md:h left-[35%] rounded-4xl overflow-hidden -translate-x-1/2 z-50 w-[65%] h-[55%] duration-300 hover:-translate-y-3"
-          >
-            <img
-              class="w-[100%] h-[100%] object-cover"
-              src="src/images/img3.jpg"
-              alt=""
-            />
-          </figure>
-          <!-- on image 2 -->
-          <figure
-            class="absolute hidden lg:flex bottom-0 md:h left-[75%] rounded-4xl overflow-hidden -translate-x-1/2 z-[40] w-[40%] h-[30%] duration-300 hover:-translate-y-3"
-          >
-            <img
-              class="w-[100%] h-[100%] object-cover"
-              src="src/images/img4.png"
-              alt=""
-            />
-          </figure>
+    </div>
+    <!-- *******Team members page******* -->
+    <div class="w-full h-fit flex flex-wrap justify-center items-center">
+      <!-- --------------------------------header---------------------------------------->
+      <header class="w-full h-fit flex flex-col justify-center items-center my-[50px]">
+        <div
+          class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,_255,_255,_0.050)] border-gray-800 backdrop-blur-2xl flex justify-center items-center mb-[30px]">
+          <h4 class="text-[18px] text-[#703FFE]">Team Members</h4>
         </div>
-        <!-- right side -->
-        <div class="w-full md:w-[50%] px-4 py-8 md:mt-14 lg:mt-20">
-          <button class="txtFav py-1.5 px-6 btnFav2 mb-4">About Us</button>
-          <h1 class="text-[28px] w-[95%] lg:text-[50px] lg:w-[70%]">
-            Hight Quality NFT Collections
-          </h1>
-          <p class="mt-3 text-[14px] readex">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod
-            tempor incididunt ut labore et
-          </p>
-          <p class="mt-10 md:mt-5 text-[14px] readex">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-          </p>
-          <!-- button -->
-          <div
-            class="w-[210px] h-[66px] flex justify-center items-center rounded-xl bg-[#ffffff15] border border-[#dadada1e] mt-6"
-          >
-            <div class="btnFav">Get Conected</div>
+        <h3 class="w-full md:w-[40%] text-2xl md:text-5xl text-[white] text-center mb-[30px]">Our Amazing Team Members
+        </h3>
+      </header>
+      <section class="w-full h-fit flex flex-wrap justify-center items-center gap-y-5">
+        <!-- -----------------box1-------------------- -->
+        <div class="w-10/12 sm:w-[40%] lg:w-[20%] h-fit flex flex-wrap justify-center items-center">
+          <figure
+            class="w-[80%] h-1/2 p-3 border border-gray-700 bg-[rgba(255,255,255,0.07)] flex justify-center items-center rounded-3xl">
+            <img class="w-full h-full rounded-2xl object-cover" src="src/images/img_team_Home01-CYVL8BY.jpg" alt="">
+          </figure>
+          <div class="w-[80%] h-fit flex flex-wrap items-center p-5 border-b border-b-gray-700">
+            <h6 class="w-full text-center">Jane Cooper</h6>
+            <p class="w-full simpleFont text-gray-600 text-center">Founder & CEO</p>
           </div>
+          <ul
+            class="w-[80%] h-fit flex justify-center items-center *:size-[40px] *:rounded-full *:bg-[rgba(255,255,255,0.07)] *:flex *:justify-center *:items-center *:text-[20px] *:hover:bg-[#703FFE] *:duration-500 *:cursor-pointer gap-x-2.5 mt-5 ">
+            <li class="icon-telegram"></li>
+            <li class="icon-twitter-circled"></li>
+            <li class="icon-facebook-circled"></li>
+          </ul>
         </div>
+        <!-- -----------------box2-------------------- -->
+        <div class="w-10/12 sm:w-[40%] lg:w-[20%] h-fit flex flex-wrap justify-center items-center">
+          <figure
+            class="w-[80%] h-1/2 p-3 border border-gray-700 bg-[rgba(255,255,255,0.07)] flex justify-center items-center rounded-3xl">
+            <img class="w-full h-full rounded-2xl object-cover" src="src/images/Img_home01_03.png" alt="">
+          </figure>
+          <div class="w-[80%] h-fit flex flex-wrap items-center p-5 border-b border-b-gray-700">
+            <h6 class="w-full text-center">Jane Cooper</h6>
+            <p class="w-full simpleFont text-gray-600 text-center">Founder & CEO</p>
+          </div>
+          <ul
+            class="w-[80%] h-fit flex justify-center items-center *:size-[40px] *:rounded-full *:bg-[rgba(255,255,255,0.07)] *:flex *:justify-center *:items-center *:text-[20px] *:hover:bg-[#703FFE] *:duration-500 *:cursor-pointer gap-x-2.5 mt-5 ">
+            <li class="icon-telegram"></li>
+            <li class="icon-twitter-circled"></li>
+            <li class="icon-facebook-circled"></li>
+          </ul>
+        </div>
+        <!-- -----------------box3-------------------- -->
+        <div class="w-10/12 sm:w-[40%] lg:w-[20%] h-fit flex flex-wrap justify-center items-center">
+          <figure
+            class="w-[80%] h-1/2 p-3 border border-gray-700 bg-[rgba(255,255,255,0.07)] flex justify-center items-center rounded-3xl">
+            <img class="w-full h-full rounded-2xl object-cover" src="src/images/Img_home01_02.png" alt="">
+          </figure>
+          <div class="w-[80%] h-fit flex flex-wrap items-center p-5 border-b border-b-gray-700">
+            <h6 class="w-full text-center">Jane Cooper</h6>
+            <p class="w-full simpleFont text-gray-600 text-center">Founder & CEO</p>
+          </div>
+          <ul
+            class="w-[80%] h-fit flex justify-center items-center *:size-[40px] *:rounded-full *:bg-[rgba(255,255,255,0.07)] *:flex *:justify-center *:items-center *:text-[20px] *:hover:bg-[#703FFE] *:duration-500 *:cursor-pointer gap-x-2.5 mt-5 ">
+            <li class="icon-telegram"></li>
+            <li class="icon-twitter-circled"></li>
+            <li class="icon-facebook-circled"></li>
+          </ul>
+        </div>
+        <!-- -----------------box4-------------------- -->
+        <div class="w-10/12 sm:w-[40%] lg:w-[20%] h-fit flex flex-wrap justify-center items-center">
+          <figure
+            class="w-[80%] h-1/2 p-3 border border-gray-700 bg-[rgba(255,255,255,0.07)] flex justify-center items-center rounded-3xl">
+            <img class="w-full h-full rounded-2xl object-cover" src="src/images/Img_home01_01.png" alt="">
+          </figure>
+          <div class="w-[80%] h-fit flex flex-wrap items-center p-5 border-b border-b-gray-700">
+            <h6 class="w-full text-center">Jane Cooper</h6>
+            <p class="w-full simpleFont text-gray-600 text-center">Founder & CEO</p>
+          </div>
+          <ul
+            class="w-[80%] h-fit flex justify-center items-center *:size-[40px] *:rounded-full *:bg-[rgba(255,255,255,0.07)] *:flex *:justify-center *:items-center *:text-[20px] *:hover:bg-[#703FFE] *:duration-500 *:cursor-pointer gap-x-2.5 mt-5 ">
+            <li class="icon-telegram"></li>
+            <li class="icon-twitter-circled"></li>
+            <li class="icon-facebook-circled"></li>
+          </ul>
+        </div>
+      </section>
+      <div class="w-full h-fit p-5 border-t border-t-gray-800 relative mt-[50px] flex justify-center items-center">
+        <div
+          class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,_255,_255,_0.050)] border-gray-800 backdrop-blur-2xl flex justify-center items-center text-center absolute top-0 left-[50%] translate-y-[-50%] translate-x-[-50%]">
+          <h4 class="text-[13px] text-[white]">We Are Partnered with Top Brands</h4>
+        </div>
+        <figure class="w-[80%] lg:w-[60%] h-[200px] flex justify-center items-center">
+          <img class="w-[20%] h-fit object-cover" src="src/images/logoipsum-07.png" alt="">
+          <img class="w-[20%] h-fit object-cover" src="src/images/logoipsum-08.png" alt="">
+          <img class="w-[20%] h-fit object-cover" src="src/images/logoipsum-09.png" alt="">
+          <img class="w-[20%] h-fit object-cover" src="src/images/logoipsum-10.png" alt="">
+          <img class="w-[20%] h-fit object-cover" src="src/images/logoipsum-12.png" alt="">
+        </figure>
       </div>
-      <!---------------------------------- Our Speciality ---------------------------->
-      <section class="mt-12">
-        <!-- top -->
-        <div class="w-full">
-          <button class="btnFav2 px-6 py-1 flex mx-auto">Our Speciality</button>
-          <h2
-            class="text-[28px] md:mt-6 w-[90%] md:w-[60%] md:text-3xl lg:text-[50px] mx-auto text-center px-2 mt-2"
-          >
-            Complete Solutions for your NFT
-          </h2>
-          <p
-            class="text-center md:w-[60%] lg:w-[40%] md:mt-6 readex text-[14px] mt-2 mx-auto"
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod
-            tempor incididunt ut labore et
-          </p>
+    </div>
+    <!-- *******testimonal page******* -->
+    <div class="w-full h-fit flex flex-wrap justify-center items-center">
+      <!-- --------------------------------header---------------------------------------->
+      <header class="w-full h-fit flex flex-col justify-center items-center my-[50px]">
+        <div
+          class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,_255,_255,_0.050)] border-gray-800 backdrop-blur-2xl flex justify-center items-center mb-[30px]">
+          <h4 class="text-[18px] text-[#703FFE]">Team Members</h4>
         </div>
-        <!-- bottom section -->
-        <section
-          class="w-full pt-[90px] flex flex-wrap justify-center md:justify-around lg:justify-center gap-30 items-center md:gap-0 md:pt-[150px] md:gap-y-36 lg:gap-5 mb-32"
-        >
-          <!-- 01 -->
-          <div
-            class="w-[95%] md:w-[47%] lg:w-[23%] xl:w-[20%] bgGlass relative mx-auto"
-          >
-            <!-- icon -->
-            <div
-              class="w-[104px] h-[104px] bgFav rounded-full flex justify-center items-center hover:rotate-y-180 duration-500 absolute left-[50%] -top-[60%] translate-y-1/2 -translate-x-1/2"
-            >
-              <figure class="w-[56px] h-[56px]">
-                <img class="w-full h-full" src="src/images/icon1.png" alt="" />
-              </figure>
-            </div>
-            <h4
-              class="flex justify-center lg:text-xl cursor-pointer duration-300 hover:text-[#703FFE]"
-            >
-              Huge Collection
-            </h4>
-            <p
-              class="w-full flex justify-center text-center readex text-sm mt-2"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-            </p>
-            <h2 class="text-[28px] text-[#20233f] flex justify-center mt-3">
-              01
-            </h2>
-          </div>
-          <!-- 02 -->
-          <div
-            class="w-[95%] md:w-[47%] lg:w-[23%] xl:w-[20%] bgGlass relative mx-auto"
-          >
-            <!-- icon -->
-            <div
-              class="w-[104px] h-[104px] bgFav rounded-full flex justify-center items-center hover:rotate-y-180 duration-500 absolute left-[50%] -top-[60%] translate-y-1/2 -translate-x-1/2"
-            >
-              <figure class="w-[56px] h-[56px]">
-                <img class="w-full h-full" src="src/images/icon2.png" alt="" />
-              </figure>
-            </div>
-            <h4
-              class="flex justify-center lg:text-xl cursor-pointer duration-300 hover:text-[#703FFE]"
-            >
-              High Quality
-            </h4>
-            <p
-              class="w-full flex justify-center text-center readex text-sm mt-2"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-            </p>
-            <h2 class="text-[28px] text-[#20233f] flex justify-center mt-3">
-              02
-            </h2>
-          </div>
-          <!-- 03 -->
-          <div
-            class="w-[95%] md:w-[47%] lg:w-[23%] xl:w-[20%] bgGlass relative mx-auto"
-          >
-            <!-- icon -->
-            <div
-              class="w-[104px] h-[104px] bgFav rounded-full flex justify-center items-center hover:rotate-y-180 duration-500 absolute left-[50%] -top-[60%] translate-y-1/2 -translate-x-1/2"
-            >
-              <figure class="w-[56px] h-[56px]">
-                <img class="w-full h-full" src="src/images/icon3.png" alt="" />
-              </figure>
-            </div>
-            <h4
-              class="flex justify-center lg:text-xl cursor-pointer duration-300 hover:text-[#703FFE]"
-            >
-              Top Resource
-            </h4>
-            <p
-              class="w-full flex justify-center text-center readex text-sm mt-2"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-            </p>
-            <h2 class="text-[28px] text-[#20233f] flex justify-center mt-3">
-              03
-            </h2>
-          </div>
-          <!-- 04 -->
-          <div
-            class="w-[95%] md:w-[47%] lg:w-[23%] xl:w-[20%] bgGlass relative mx-auto"
-          >
-            <!-- icon -->
-            <div
-              class="w-[104px] h-[104px] bgFav rounded-full flex justify-center items-center hover:rotate-y-180 duration-500 absolute left-[50%] -top-[60%] translate-y-1/2 -translate-x-1/2"
-            >
-              <figure class="w-[56px] h-[56px]">
-                <img class="w-full h-full" src="src/images/icon4.png" alt="" />
-              </figure>
-            </div>
-            <h4
-              class="flex justify-center lg:text-xl cursor-pointer duration-300 hover:text-[#703FFE]"
-            >
-              Big Community
-            </h4>
-            <p
-              class="w-full flex justify-center text-center readex text-sm mt-2"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-            </p>
-            <h2 class="text-[28px] text-[#20233f] flex justify-center mt-3">
-              04
-            </h2>
-          </div>
-        </section>
-      </section>
-      <!----------------------------------- Join NFT Portfolio ---------------------->
-      <section class="mt-12">
-        <!-- top -->
-        <div class="w-full">
-          <button class="btnFav2 px-6 py-1 flex mx-auto">
-            Join NFT Portfolio
-          </button>
-          <h2
-            class="text-[28px] md:mt-6 w-[95%] md:w-[60%] lg:w-[50%] md:text-3xl lg:text-[50px] mx-auto text-center px-2 mt-2"
-          >
-            Become a Cyfonii Player Now
-          </h2>
-        </div>
-        <!-- bottom -->
-        <div class="w-full mt-20 md:flex md:flex-wrap md:justify-around">
-          <!-- left -->
-          <div
-            class="w-full h-fit pb-3 md:w-[45%] flex flex-wrap gap-20 justify-center mb-16 md:mb-0"
-          >
-            <!-- step 1 -->
-            <div class="w-[95%] bgGlass relative mx-auto">
-              <!-- icon -->
-              <div
-                class="w-[77px] h-[30px] btnFav2 rounded-full flex justify-center items-center hover:rotate-y-180 duration-500 absolute left-[15%] bottom-[100%] translate-y-1/2 -translate-x-1/2"
-              >
-                <h6>step 1</h6>
-              </div>
-              <!-- box -->
-              <div class="flex flex-wrap items-center">
-                <div class="w-full md:w-[10%]">
-                  <!-- icon -->
-                  <figure class="w-10 h-10">
-                    <img
-                      class="w-full h-full"
-                      src="src/images/icon5.png"
-                      alt=""
-                    />
-                  </figure>
-                </div>
-                <!-- text -->
-                <div
-                  class="pt-2.5 w-full lg:w-[80%] lg:border-l lg:border-l-[#dadada1e] lg:pl-3"
-                >
-                  <h4
-                    class="flex justify-start lg:text-xl cursor-pointer duration-300 hover:text-[#703FFE]"
-                  >
-                    Huge Collection
-                  </h4>
-                  <p
-                    class="w-full flex justify-start text-start readex text-sm pt-2.5"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- step 2 -->
-            <div class="w-[95%] bgGlass relative mx-auto">
-              <!-- icon -->
-              <div
-                class="w-[77px] h-[30px] btnFav2 rounded-full flex justify-center items-center hover:rotate-y-180 duration-500 absolute left-[15%] bottom-[100%] translate-y-1/2 -translate-x-1/2"
-              >
-                <h6>step 2</h6>
-              </div>
-              <!-- box -->
-              <div class="flex flex-wrap items-center">
-                <div class="w-full md:w-[10%]">
-                  <!-- icon -->
-                  <figure class="w-10 h-10">
-                    <img
-                      class="w-full h-full"
-                      src="src/images/icon6.png"
-                      alt=""
-                    />
-                  </figure>
-                </div>
-                <!-- text -->
-                <div
-                  class="pt-2.5 w-full lg:w-[80%] lg:border-l lg:border-l-[#dadada1e] lg:pl-3"
-                >
-                  <h4
-                    class="flex justify-start lg:text-xl cursor-pointer duration-300 hover:text-[#703FFE]"
-                  >
-                    Buy your NFT
-                  </h4>
-                  <p
-                    class="w-full flex justify-start text-start readex text-sm pt-2.5"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- step 3 -->
-            <div class="w-[95%] bgGlass relative mx-auto">
-              <!-- icon -->
-              <div
-                class="w-[77px] h-[30px] btnFav2 rounded-full flex justify-center items-center hover:rotate-y-180 duration-500 absolute left-[15%] bottom-[100%] translate-y-1/2 -translate-x-1/2"
-              >
-                <h6>step 3</h6>
-              </div>
-              <!-- box -->
-              <div class="flex flex-wrap items-center">
-                <div class="w-full md:w-[10%]">
-                  <!-- icon -->
-                  <figure class="w-10 h-10">
-                    <img
-                      class="w-full h-full"
-                      src="src/images/icon7.png"
-                      alt=""
-                    />
-                  </figure>
-                </div>
-                <!-- text -->
-                <div
-                  class="pt-2.5 w-full lg:w-[80%] lg:border-l lg:border-l-[#dadada1e] lg:pl-3"
-                >
-                  <h4
-                    class="flex justify-start lg:text-xl cursor-pointer duration-300 hover:text-[#703FFE]"
-                  >
-                    Create collection
-                  </h4>
-                  <p
-                    class="w-full flex justify-start text-start readex text-sm pt-2.5"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- step 4 -->
-            <div class="w-[95%] bgGlass relative mx-auto">
-              <!-- icon -->
-              <div
-                class="w-[77px] h-[30px] btnFav2 rounded-full flex justify-center items-center hover:rotate-y-180 duration-500 absolute left-[15%] bottom-[100%] translate-y-1/2 -translate-x-1/2"
-              >
-                <h6>step 4</h6>
-              </div>
-              <!-- box -->
-              <div class="flex flex-wrap items-center">
-                <div class="w-full md:w-[10%]">
-                  <!-- icon -->
-                  <figure class="w-10 h-10">
-                    <img
-                      class="w-full h-full"
-                      src="src/images/icon8.png"
-                      alt=""
-                    />
-                  </figure>
-                </div>
-                <!-- text -->
-                <div
-                  class="pt-2.5 w-full lg:w-[80%] lg:border-l lg:border-l-[#dadada1e] lg:pl-3"
-                >
-                  <h4
-                    class="flex justify-start lg:text-xl cursor-pointer duration-300 hover:text-[#703FFE]"
-                  >
-                    Sell your NFT
-                  </h4>
-                  <p
-                    class="w-full flex justify-start text-start readex text-sm pt-2.5"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- right -->
-          <div class="w-full md:w-[45%]">
-            <figure class="w-full h-full">
-              <img
-                class="w-full h-full object-cover"
-                src="src/images/img5.png"
-                alt=""
-              />
-            </figure>
+        <h3 class="w-full md:w-[40%] text-2xl md:text-5xl text-[white] text-center mb-[30px]">Our Amazing Team Members
+        </h3>
+      </header>
+      <section
+        class="w-10/12 h-fit flex flex-wrap justify-center items-center bg-[rgba(255,255,255,0.03)] border border-gray-800 rounded-2xl">
+        <figure class="w-[100px] h-fit flex justify-center items-center">
+          <img class="w-full h-fit object-cover" src="src/images/icon-quote.png" alt="">
+        </figure>
+        <q class="w-full h-fit p-5 text-[18px] md:text-[25px] simpleFont text-center">Lorem ipsum dolor sit amet
+          consectetur adipisicing
+          elit. Voluptatibus praesentium minus at sint laborum nesciunt dolore odit repellendus, amet adipisci maxime
+          deserunt delectus sequi aut ratione natus consectetur, iusto esse culpa? Esse iste quia omnis velit ullam eum
+          eos neque, repellat dignissimos corporis necessitatibus beatae.</q>
+        <div class="w-full h-fit flex flex-col justify-center items-center">
+          <figure class="size-[80px] rounded-full m-3  flex justify-center items-center overflow-hidden">
+            <img class="w-full object-cover" src="src/images/img_testimonial_Home01-HSEBKXY.jpg" alt="">
+          </figure>
+          <div class="w-[80%] h-fit flex flex-wrap items-center">
+            <h6 class="w-full text-center">Jacob jones</h6>
+            <p class="w-full simpleFont text-gray-600 text-center">chief Product Officer</p>
           </div>
         </div>
       </section>
-      <!-- Our Speciality -->
-      <section class="mt-12">
-        <!-- top -->
-        <div class="w-full">
-          <button class="btnFav2 px-6 py-1 flex mx-auto">Our Speciality</button>
-          <h2
-            class="text-[28px] md:mt-6 w-[95%] md:w-[60%] lg:w-[50%] md:text-3xl lg:text-[50px] mx-auto text-center px-2 mt-2"
-          >
-            OUR COLLECTION
-          </h2>
+    </div>
+    <!-- *******FAQ page******* -->
+    <div class="w-full h-fit flex flex-wrap justify-center items-center">
+      <!-- --------------------------------header---------------------------------------->
+      <header class="w-full h-fit flex flex-col justify-center items-center my-[50px]">
+        <div
+          class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,_255,_255,_0.050)] border-gray-800 backdrop-blur-2xl flex justify-center items-center mb-[30px]">
+          <h4 class="text-[18px] text-[#703FFE]">FAQs</h4>
         </div>
-        <!-- slider -->
-        <div class="w-full mt-5">
-          <div class="w-full flex gap-5 pl-5 overflow-hidden">
-            <!-- card 1 -->
-            <figure
-              class="w-[90%] md:w-[45%] lg:w-[30%] h-[450px] mx-auto flex justify-center items-center rounded-3xl bg-[#ffffff15] border border-[#dadada1e] relative shrink-0"
-            >
-              <img
-                class="w-[90%] h-[90%] object-cover rounded-[55px]"
-                src="src/images/img6.jpg"
-                alt=""
-              />
-              <button
-                class="w-[90%] h-[60px] absolute bottom-[7%] rounded-2xl bg-[#ffffff15] border border-[#dadada1e] hover:bg-white duration-500 hover:text-[#703ffe] cursor-pointer"
-              >
-                3D Digital ArtWork
-              </button>
-            </figure>
-            <!-- card 2 -->
-            <figure
-              class="w-[90%] md:w-[45%] lg:w-[30%] h-[450px] mx-auto flex justify-center items-center rounded-3xl bg-[#ffffff15] border border-[#dadada1e] relative shrink-0"
-            >
-              <img
-                class="w-[90%] h-[90%] object-cover rounded-[55px]"
-                src="src/images/img7.png"
-                alt=""
-              />
-              <button
-                class="w-[90%] h-[60px] absolute bottom-[7%] rounded-2xl bg-[#ffffff15] border border-[#dadada1e] hover:bg-white duration-500 hover:text-[#703ffe] cursor-pointer"
-              >
-                3D Digital ArtWork
-              </button>
-            </figure>
-            <!-- card 3 -->
-            <figure
-              class="w-[90%] md:w-[45%] lg:w-[30%] h-[450px] mx-auto flex justify-center items-center rounded-3xl bg-[#ffffff15] border border-[#dadada1e] relative shrink-0"
-            >
-              <img
-                class="w-[90%] h-[90%] object-cover rounded-[55px]"
-                src="src/images/img8.png"
-                alt=""
-              />
-              <button
-                class="w-[90%] h-[60px] absolute bottom-[7%] rounded-2xl bg-[#ffffff15] border border-[#dadada1e] hover:bg-white duration-500 hover:text-[#703ffe] cursor-pointer"
-              >
-                3D Digital ArtWork
-              </button>
-            </figure>
-          </div>
-          <div></div>
+        <h3 class="w-full md:w-[40%] text-2xl md:text-5xl text-[white] text-center mb-[30px]">Frequently Asked Questions
+        </h3>
+        <p class="w-[50%] h-fit simpleFont text-center leading-loose text-[14px]">Below is a list of frequently asked
+          questions and answers from partners and 3D artists. <br> Please check this FAQ first before contacting us.</p>
+      </header>
+      <ul class="w-10/12 h-fit border-b border-b-gray-800 flex flex-wrap justify-center items-center p-5 gap-2.5">
+        <li
+          class="w-full md:w-[15%] h-fit p-1.5 flex justify-center items-center border border-gray-800 rounded-2xl bg-[rgba(255,255,255,0.07)]">
+          <a href=""
+            class="w-full h-fit p-2.5 text-[14px] hover:bg-[linear-gradient(220deg,_#b392ff_20%,_#703ffe_100%)] rounded-xl flex justify-center items-center">Cryptocurrency</a>
+        </li>
+        <li
+          class="w-full md:w-[15%] h-fit p-1.5 flex justify-center items-center border border-gray-800 rounded-2xl bg-[rgba(255,255,255,0.07)]">
+          <a href=""
+            class="w-full h-fit p-2.5 text-[14px] hover:bg-[linear-gradient(220deg,_#b392ff_20%,_#703ffe_100%)] rounded-xl flex justify-center items-center">NFT
+            Token</a>
+        </li>
+        <li
+          class="w-full md:w-[15%] h-fit p-1.5 flex justify-center items-center border border-gray-800 rounded-2xl bg-[rgba(255,255,255,0.07)]">
+          <a href=""
+            class="w-full h-fit p-2.5 text-[14px] hover:bg-[linear-gradient(220deg,_#b392ff_20%,_#703ffe_100%)] rounded-xl flex justify-center items-center">Collection</a>
+        </li>
+        <li
+          class="w-full md:w-[15%] h-fit p-1.5 justify-center items-center border border-gray-800 rounded-2xl bg-[rgba(255,255,255,0.07)]">
+          <a href="" class="w-full h-fit p-2.5 text-[14px] bgFav rounded-xl flex justify-center items-center">Crypto
+            Trading</a>
+        </li>
+      </ul>
+      <!-- --------------------------------accordion------------------------------------- -->
+      <section class="w-10/12 h-fit flex flex-wrap justify-center items-center gap-2.5 mt-5">
+        <div
+          class="w-full md:w-[45%] p-2.5 h-fit border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex justify-between items-center">
+          <p class="text-[12px] md:text-[14px]">01. What is the best way to collect NFT?</p>
+          <span class="cursor-pointer">+</span>
+        </div>
+        <div
+          class="w-full md:w-[45%] p-2.5 h-fit border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex justify-between items-center">
+          <p class="text-[12px] md:text-[14px]">02. When the musics over turn off the light?</p>
+          <span class="cursor-pointer">+</span>
+        </div>
+        <div
+          class="w-full md:w-[45%] p-2.5 h-fit border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex justify-between items-center">
+          <p class="text-[12px] md:text-[14px]">03. What is the best way to collect NFT?</p>
+          <span class="cursor-pointer">+</span>
+        </div>
+        <div
+          class="w-full md:w-[45%] p-2.5 h-fit border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex justify-between items-center">
+          <p class="text-[12px] md:text-[14px]">04. When the musics over turn off the light?</p>
+          <span class="cursor-pointer">+</span>
+        </div>
+        <div
+          class="w-full md:w-[45%] p-2.5 h-fit border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex justify-between items-center">
+          <p class="text-[12px] md:text-[14px]">05. What is the best way to collect NFT?</p>
+          <span class="cursor-pointer">+</span>
+        </div>
+        <div
+          class="w-full md:w-[45%] p-2.5 h-fit border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex justify-between items-center">
+          <p class="text-[12px] md:text-[14px]">06. When the musics over turn off the light?</p>
+          <span class="cursor-pointer">+</span>
+        </div>
+        <div
+          class="w-full md:w-[45%] p-2.5 h-fit border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex justify-between items-center">
+          <p class="text-[12px] md:text-[14px]">07. What is the best way to collect NFT?</p>
+          <span class="cursor-pointer">+</span>
+        </div>
+        <div
+          class="w-full md:w-[45%] p-2.5 h-fit border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex justify-between items-center">
+          <p class="text-[12px] md:text-[14px]">08. When the musics over turn off the light?</p>
+          <span class="cursor-pointer">+</span>
         </div>
       </section>
-    </main>
-  </body>
-  <script src="src/js/master.js"></script>
+    </div>
+  </main>
+</body>
+<script src="src/js/master.js"></script>
+
 </html>
