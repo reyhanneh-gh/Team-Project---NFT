@@ -53,6 +53,10 @@ body {
     border-color: #dadada1e;
     border-radius: 16px 16px 0px 0px;
   }
+  .dark {
+    background-color: #9c84e5;
+    color: black;
+  }
 }
 
 @layer components {
@@ -77,5 +81,4 @@ body {
     border: 1px solid #dadada1e;
     color: #703ffe;
   }
-  
 }
