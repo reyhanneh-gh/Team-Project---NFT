@@ -539,25 +539,27 @@
         </h3>
       </header>
 
-      <section class="block md:flex w-10/12 h-[100vh] flex-wrap justify-center items-center">
-        <div class="w-1/2 h-full flex flex-wrap justify-center items-center border-r border-r-gray-800 relative">
+      <section class="flex w-10/12 h-fit flex-wrap justify-center items-center *:gap-y-10">
+        <div
+          class="w-full lg:w-1/2 h-full flex flex-wrap justify-center items-center lg:border-r lg:border-r-gray-800 relative">
           <!-- -----------------circle start-------------------- -->
           <span
-            class="size-[10px] rounded-full bg-[#703FFE] absolute top-0 right-0 translate-y-[-50%] translate-x-[50%]"></span>
+            class="hidden lg:block size-[10px] rounded-full bg-[#703FFE] absolute top-0 right-0 translate-y-[-50%] translate-x-[50%]"></span>
           <!-- -----------------circle end---------------------- -->
           <span
-            class="size-[10px] rounded-full bg-[#703FFE] absolute bottom-0 right-0 translate-y-[50%] translate-x-[50%]"></span>
+            class="hidden lg:block size-[10px] rounded-full bg-[#703FFE] absolute bottom-0 right-0 translate-y-[50%] translate-x-[50%]"></span>
           <!-- ------------------box 1(left side)------------------------>
           <div
-            class="w-[90%] h-[200px] p-[20px] border border-gray-800 rounded-t-3xl flex flex-col justify-center mybg border-b-0 relative">
+            class="w-[90%] min-h-[200px] max-h-[240px] p-[20px] border border-gray-800 rounded-t-3xl flex flex-col justify-center mybg border-b-0 relative">
             <div
               class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,255,255,0.07)] border-gray-800 flex justify-center items-center absolute top-0 left-[20px] translate-y-[-50%]">
               <h4 class="text-[12px] text-[#703FFE]">September 2025</h4>
             </div>
-            <h6 class="hover:text-[#703FFE] duration-500 cursor-pointer w-[110%] border-b border-b-gray-800 relative">
+            <h6
+              class="hover:text-[#703FFE] duration-500 cursor-pointer w-[110%] lg:border-b lg:border-b-gray-800 relative">
               Initial Release
               <span
-                class="size-[10px] rounded-full bg-[#703FFE] absolute bottom-0 right-0 translate-y-[50%] translate-x-[50%]"></span>
+                class="hidden lg:block size-[10px] rounded-full bg-[#703FFE] absolute bottom-0 right-0 translate-y-[50%] translate-x-[50%]"></span>
             </h6>
             <span class="w-[80px] h-[3px] rounded-2xl bgFav my-5"></span>
             <p class="simpleFont">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum ipsum repudiandae
@@ -566,15 +568,16 @@
           </div>
           <!-- ------------------box 2------------------------>
           <div
-            class="w-[90%] h-[200px] p-[20px] border border-gray-800 rounded-t-3xl flex flex-col justify-center mybg border-b-0 relative">
+            class="w-[90%] min-h-[200px] max-h-[240px] p-[20px] border border-gray-800 rounded-t-3xl flex flex-col justify-center mybg border-b-0 relative">
             <div
               class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,255,255,0.07)] border-gray-800 flex justify-center items-center absolute top-0 left-[20px] translate-y-[-50%]">
               <h4 class="text-[12px] text-[#703FFE]">September 2025</h4>
             </div>
-            <h6 class="hover:text-[#703FFE] duration-500 cursor-pointer w-[110%] border-b border-b-gray-800 relative">
+            <h6
+              class="hover:text-[#703FFE] duration-500 cursor-pointer w-[110%] lg:border-b lg:border-b-gray-800 relative">
               Initial Release
               <span
-                class="size-[10px] rounded-full bg-[#703FFE] absolute bottom-0 right-0 translate-y-[50%] translate-x-[50%]"></span>
+                class="hidden lg:block size-[10px] rounded-full bg-[#703FFE] absolute bottom-0 right-0 translate-y-[50%] translate-x-[50%]"></span>
             </h6>
             <span class="w-[80px] h-[3px] rounded-2xl bgFav my-5"></span>
             <p class="simpleFont">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum ipsum repudiandae
@@ -583,16 +586,42 @@
           </div>
           <!-- ------------------box 3------------------------>
           <div
-            class="w-[90%] h-[200px] p-[20px] border border-gray-800 rounded-t-3xl flex flex-col justify-center mybg border-b-0 relative">
+            class="w-[90%] min-h-[200px] max-h-[240px] p-[20px] border border-gray-800 rounded-t-3xl flex flex-col justify-center mybg border-b-0 relative">
             <div
               class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,255,255,0.07)] border-gray-800 flex justify-center items-center absolute top-0 left-[20px] translate-y-[-50%]">
               <h4 class="text-[12px] text-[#703FFE]">September 2025</h4>
             </div>
-            <h6 class="hover:text-[#703FFE] duration-500 cursor-pointer w-[110%] border-b border-b-gray-800 relative">
+            <h6
+              class="hover:text-[#703FFE] duration-500 cursor-pointer w-[110%] lg:border-b lg:border-b-gray-800 relative">
               Design & Development
               <span
-                class="size-[10px] rounded-full bg-[#703FFE] absolute bottom-0 right-0 translate-y-[50%] translate-x-[50%]"></span>
+                class="hidden lg:block size-[10px] rounded-full bg-[#703FFE] absolute bottom-0 right-0 translate-y-[50%] translate-x-[50%]"></span>
             </h6>
+            <span class="w-[80px] h-[3px] rounded-2xl bgFav my-5"></span>
+            <p class="simpleFont">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum ipsum repudiandae
+              et,
+              tempora atque ratione quam eveniet accusamus voluptatibus cupiditate?</p>
+          </div>
+          <!-- ------------------box 4(left side)------------------------>
+          <div
+            class="flex lg:hidden w-[90%] min-h-[200px] max-h-[240px] p-[20px] border border-gray-800 rounded-t-3xl flex-col justify-center mybg border-b-0 relative">
+            <div
+              class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,255,255,0.07)] border-gray-800 flex justify-center items-center absolute top-0 left-[20px] translate-y-[-50%]">
+              <h4 class="text-[12px] text-[#703FFE]">September 2025</h4>
+            </div>
+            <h6 class="hover:text-[#703FFE] duration-500 cursor-pointer w-[110%] relative">Design & Development</h6>
+            <span class="w-[80px] h-[3px] rounded-2xl bgFav my-5"></span>
+            <p class="simpleFont">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum ipsum repudiandae
+              et,tempora atque ratione quam eveniet accusamus voluptatibus cupiditate?</p>
+          </div>
+          <!-- ------------------box 5------------------------>
+          <div
+            class="flex lg:hidden w-[90%] min-h-[200px] max-h-[240px] p-[20px] border border-gray-800 rounded-t-3xl flex-col justify-center mybg border-b-0 relative">
+            <div
+              class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,255,255,0.07)] border-gray-800 flex justify-center items-center absolute top-0 left-[20px] translate-y-[-50%]">
+              <h4 class="text-[12px] text-[#703FFE]">September 2025</h4>
+            </div>
+            <h6 class="hover:text-[#703FFE] duration-500 cursor-pointer w-[110%] relative">Result & Final Report</h6>
             <span class="w-[80px] h-[3px] rounded-2xl bgFav my-5"></span>
             <p class="simpleFont">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum ipsum repudiandae
               et,
@@ -600,9 +629,10 @@
           </div>
         </div>
         <!-- ------------------box 4(right side)------------------------>
-        <div class="w-1/2 h-full flex flex-wrap justify-center items-center">
+        <div
+          class="hidden lg:flex w-1/2 h-full  flex-wrap justify-center items-center overflow-hidden lg:overflow-visible">
           <div
-            class="w-[90%] h-[200px] p-[20px] border border-gray-800 rounded-t-3xl flex flex-col justify-center mybg border-b-0 relative">
+            class="hidden lg:flex w-[90%] min-h-[200px] max-h-[240px] p-[20px] border border-gray-800 rounded-t-3xl flex-col justify-center mybg border-b-0 relative">
             <div
               class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,255,255,0.07)] border-gray-800 flex justify-center items-center absolute top-0 left-[20px] translate-y-[-50%]">
               <h4 class="text-[12px] text-[#703FFE]">September 2025</h4>
@@ -619,7 +649,7 @@
           </div>
           <!-- ------------------box 5------------------------>
           <div
-            class="w-[90%] h-[200px] p-[20px] border border-gray-800 rounded-t-3xl flex flex-col justify-center mybg border-b-0 relative">
+            class="hidden lg:flex w-[90%] min-h-[200px] max-h-[240px] p-[20px] border border-gray-800 rounded-t-3xl flex-col justify-center mybg border-b-0 relative">
             <div
               class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,255,255,0.07)] border-gray-800 flex justify-center items-center absolute top-0 left-[20px] translate-y-[-50%]">
               <h4 class="text-[12px] text-[#703FFE]">September 2025</h4>
@@ -785,91 +815,124 @@
         <p class="w-[50%] h-fit simpleFont text-center leading-loose text-[14px]">Below is a list of frequently asked
           questions and answers from partners and 3D artists. <br> Please check this FAQ first before contacting us.</p>
       </header>
-      <ul class="w-10/12 h-fit border-b border-b-gray-800 flex flex-wrap justify-center items-center p-5 gap-2.5">
+      <ul
+        class="w-10/12 md:w-full h-fit border-b border-b-gray-800 flex flex-wrap justify-center items-center p-5 gap-2.5">
         <li
-          class="w-full md:w-[15%] h-fit p-1.5 flex justify-center items-center border border-gray-800 rounded-2xl bg-[rgba(255,255,255,0.07)]">
+          class="w-full md:w-[25%] lg:w-[17%] h-fit p-1.5 flex justify-center items-center border border-gray-800 rounded-2xl bg-[rgba(255,255,255,0.07)]">
           <a href=""
             class="w-full h-fit p-2.5 text-[14px] hover:bg-[linear-gradient(220deg,_#b392ff_20%,_#703ffe_100%)] rounded-xl flex justify-center items-center">Cryptocurrency</a>
         </li>
         <li
-          class="w-full md:w-[15%] h-fit p-1.5 flex justify-center items-center border border-gray-800 rounded-2xl bg-[rgba(255,255,255,0.07)]">
+          class="w-full md:w-[25%] lg:w-[17%] h-fit p-1.5 flex justify-center items-center border border-gray-800 rounded-2xl bg-[rgba(255,255,255,0.07)]">
           <a href=""
             class="w-full h-fit p-2.5 text-[14px] hover:bg-[linear-gradient(220deg,_#b392ff_20%,_#703ffe_100%)] rounded-xl flex justify-center items-center">NFT
             Token</a>
         </li>
         <li
-          class="w-full md:w-[15%] h-fit p-1.5 flex justify-center items-center border border-gray-800 rounded-2xl bg-[rgba(255,255,255,0.07)]">
+          class="w-full md:w-[25%] lg:w-[17%] h-fit p-1.5 flex justify-center items-center border border-gray-800 rounded-2xl bg-[rgba(255,255,255,0.07)]">
           <a href=""
             class="w-full h-fit p-2.5 text-[14px] hover:bg-[linear-gradient(220deg,_#b392ff_20%,_#703ffe_100%)] rounded-xl flex justify-center items-center">Collection</a>
         </li>
         <li
-          class="w-full md:w-[15%] h-fit p-1.5 justify-center items-center border border-gray-800 rounded-2xl bg-[rgba(255,255,255,0.07)]">
+          class="w-full md:w-[25%] lg:w-[17%] h-fit p-1.5 justify-center items-center border border-gray-800 rounded-2xl bg-[rgba(255,255,255,0.07)]">
           <a href="" class="w-full h-fit p-2.5 text-[14px] bgFav rounded-xl flex justify-center items-center">Crypto
             Trading</a>
         </li>
       </ul>
       <!-- --------------------------------accordion------------------------------------- -->
-      <section class="w-10/12 h-fit flex flex-wrap justify-center items-center gap-2.5 mt-5">
+      <section class="w-10/12 md:w-5/12 h-fit flex flex-wrap justify-center items-center gap-2.5 mt-5 md:mr-2.5">
         <div
-          class="w-full md:w-[45%] p-2.5 h-[50px] border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex justify-between items-center">
+          class="w-full p-2.5 min-h-[55px] max-h-fit border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex flex-wrap justify-between items-center relative">
           <p class="text-[12px] md:text-[14px]">01. What is the best way to collect NFT?</p>
-          <span class="cursor-pointer">+</span>
+          <span class="cursor-pointer hover:text-[#703ffe] hover:scale-[1.5] duration-300">+</span>
+          <p class="answer w-full h-fit simpleFont py-5 text-gray-600 text-[16px]">Lorem ipsum dolor sit amet
+            consectetur,
+            adipisicing elit. Eum adipisci porro eius. Optio, tempora velit. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Cumque, illum.</p>
         </div>
         <div
-          class="w-full md:w-[45%] p-2.5 h-[50px] border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex justify-between items-center">
+          class="w-full p-2.5 min-h-[55px] max-h-fit border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex flex-wrap justify-between items-center relative">
           <p class="text-[12px] md:text-[14px]">02. When the musics over turn off the light?</p>
-          <span class="cursor-pointer">+</span>
+          <span class="cursor-pointer hover:text-[#703ffe] hover:scale-[1.5] duration-300">+</span>
+          <p class="answer w-full h-fit simpleFont py-5 text-gray-600 text-[16px]">Lorem ipsum dolor sit amet
+            consectetur,
+            adipisicing elit. Eum adipisci porro eius. Optio, tempora velit. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Cumque, illum.</p>
         </div>
         <div
-          class="w-full md:w-[45%] p-2.5 h-[50px] border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex justify-between items-center">
+          class="w-full p-2.5 min-h-[55px] max-h-fit border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex flex-wrap justify-between items-center relative">
           <p class="text-[12px] md:text-[14px]">03. What is the best way to collect NFT?</p>
-          <span class="cursor-pointer">+</span>
+          <span class="cursor-pointer hover:text-[#703ffe] hover:scale-[1.5] duration-300">+</span>
+          <p class="answer w-full h-fit simpleFont py-5 text-gray-600 text-[16px]">Lorem ipsum dolor sit amet
+            consectetur,
+            adipisicing elit. Eum adipisci porro eius. Optio, tempora velit.</p>
         </div>
         <div
-          class="w-full md:w-[45%] p-2.5 h-[50px] border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex justify-between items-center">
+          class="w-full p-2.5 min-h-[55px] max-h-fit border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex flex-wrap justify-between items-center relative">
           <p class="text-[12px] md:text-[14px]">04. When the musics over turn off the light?</p>
-          <span class="cursor-pointer">+</span>
+          <span class="cursor-pointer hover:text-[#703ffe] hover:scale-[1.5] duration-300">+</span>
+          <p class="answer w-full h-fit simpleFont py-5 text-gray-600 text-[16px]">Lorem ipsum dolor sit amet
+            consectetur,
+            adipisicing elit. Eum adipisci porro eius. Optio, tempora velit. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Cumque, illum.</p>
         </div>
+      </section>
+      <section class="w-10/12 md:w-5/12 h-fit flex flex-wrap justify-center items-center gap-2.5 mt-5 md:ml-2.5">
         <div
-          class="w-full md:w-[45%] p-2.5 h-[50px] border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex justify-between items-center">
+          class="w-full p-2.5 min-h-[55px] max-h-fit border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex flex-wrap justify-between items-center relative">
           <p class="text-[12px] md:text-[14px]">05. What is the best way to collect NFT?</p>
-          <span class="cursor-pointer">+</span>
+          <span class="cursor-pointer hover:text-[#703ffe] hover:scale-[1.5] duration-300">+</span>
+          <p class="answer w-full h-fit simpleFont py-5 text-gray-600 text-[16px]">Lorem ipsum dolor sit amet
+            consectetur,
+            adipisicing elit. Eum adipisci porro eius. Optio, tempora velit.</p>
         </div>
         <div
-          class="w-full md:w-[45%] p-2.5 h-[50px] border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex justify-between items-center">
+          class="w-full p-2.5 min-h-[55px] max-h-fit border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex flex-wrap justify-between items-center relative">
           <p class="text-[12px] md:text-[14px]">06. When the musics over turn off the light?</p>
-          <span class="cursor-pointer">+</span>
+          <span class="cursor-pointer hover:text-[#703ffe] hover:scale-[1.5] duration-300">+</span>
+          <p class="answer w-full h-fit simpleFont py-5 text-gray-600 text-[16px]">Lorem ipsum dolor sit amet
+            consectetur,
+            adipisicing elit. Eum adipisci porro eius. Optio, tempora velit. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Cumque, illum.</p>
         </div>
         <div
-          class="w-full md:w-[45%] p-2.5 h-[50px] border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex justify-between items-center">
+          class="w-full p-2.5 min-h-[55px] max-h-fit border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex flex-wrap justify-between items-center relative">
           <p class="text-[12px] md:text-[14px]">07. What is the best way to collect NFT?</p>
-          <span class="cursor-pointer">+</span>
+          <span class="cursor-pointer hover:text-[#703ffe] hover:scale-[1.5] duration-300">+</span>
+          <p class="answer w-full h-fit simpleFont py-5 text-gray-600 text-[16px]">Lorem ipsum dolor sit amet
+            consectetur,
+            adipisicing elit. Eum adipisci porro eius. Optio, tempora velit.</p>
         </div>
         <div
-          class="w-full md:w-[45%] p-2.5 h-[50px] border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex justify-between items-center">
+          class="w-full p-2.5 min-h-[55px] max-h-fit border border-gray-800 rounded-[10px] bg-[rgba(255,255,255,0.07)] flex flex-wrap justify-between items-center relative">
           <p class="text-[12px] md:text-[14px]">08. When the musics over turn off the light?</p>
-          <span class="cursor-pointer">+</span>
+          <span class="cursor-pointer hover:text-[#703ffe] hover:scale-[1.5] duration-300">+</span>
+          <p class="answer w-full h-fit simpleFont py-5 text-gray-600 text-[16px]">Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Eum adipisci porro eius. Optio, tempora velit. Lorem ipsum dolor sit amet
+            consectetur,
+            adipisicing elit. Cumque, illum.</p>
         </div>
-        <div
-          class="w-10/12 h-[200px] flex flex-wrap justify-center items-center p-5 bg-[linear-gradient(220deg,_#b392ff_20%,_#703ffe_100%)] rounded-2xl my-[70px] relative">
-          <figure class="w-full h-full rounded-2xl flex justify-center items-center">
-            <img class="w-full h-full object-cover" src="src/images/pattern.png" alt="">
-          </figure>
-          <figure class="hidden lg:flex md:w-[400px] justify-center items-center absolute right-0">
-            <img class="hidden lg:block md:h-full object-cover" src="src/images/img_CTA_Home01.png" alt="">
-          </figure>
-          <div class="w-full absolute p-5">
-            <h3 class="w-full text-2xl ">Create your NFT portfolio</h3>
-            <p class="w-full simpleFont ">Get udpated with news, tips & tricks</p>
-            <!-- ------------------button---------------------- -->
-            <div class="w-full h-fit flex mt-[30px] items-center">
-              <div class="w-[250px] h-[60px] flex justify-center items-center rounded-2xl bg-[rgba(255,255,255,0.07)]">
-                <a href="" class="w-[240px] h-[50px] p-3 bgBtn rounded-xl flex justify-center items-center">Join Now</a>
-              </div>
+      </section>
+
+      <div
+        class="w-10/12 h-[200px] flex flex-wrap justify-center items-center p-5 bg-[linear-gradient(220deg,_#b392ff_20%,_#703ffe_100%)] rounded-2xl my-[70px] relative">
+        <figure class="w-full h-full rounded-2xl flex justify-center items-center">
+          <img class="w-full h-full object-cover" src="src/images/pattern.png" alt="">
+        </figure>
+        <figure class="hidden lg:flex md:w-[400px] justify-center items-center absolute right-0">
+          <img class="hidden lg:block md:h-full object-cover" src="src/images/img_CTA_Home01.png" alt="">
+        </figure>
+        <div class="w-full absolute p-5">
+          <h3 class="w-full text-2xl ">Create your NFT portfolio</h3>
+          <p class="w-full simpleFont ">Get udpated with news, tips & tricks</p>
+          <!-- ------------------button---------------------- -->
+          <div class="w-full h-fit flex mt-[30px] items-center">
+            <div class="w-[250px] h-[60px] flex justify-center items-center rounded-2xl bg-[rgba(255,255,255,0.07)]">
+              <a href="" class="w-[240px] h-[50px] p-3 bgBtn rounded-xl flex justify-center items-center">Join Now</a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
     <!-- ------------------***Get NEws Page***--------------------- -->
     <div class="w-full h-fit flex flex-wrap justify-center items-center">
@@ -897,7 +960,7 @@
           <img class="w-full lg:w-1/2 object-cover" src="src/images/imgi_1_logo-01.png" alt="">
         </figure>
         <ul
-          class="w-full lg:w-4/6 h-fit flex justify-center items-center *:flex *:justify-center *:items-center *:text-[12px] *:hover:text-[#703FFE] *:duration-500 *:cursor-pointer *:p-2.5 *:md:p-5 *:md:text-[14px]">
+          class="w-full lg:w-4/6 h-fit flex flex-wrap justify-center items-center *:flex *:justify-center *:items-center *:text-[12px] *:hover:text-[#703FFE] *:duration-500 *:cursor-pointer *:p-2.5 *:md:p-5 *:md:text-[14px]">
           <li>Home</li>
           <li>explore</li>
           <li>About</li>
@@ -912,7 +975,8 @@
           <li class="icon-twitter-circled"></li>
           <li class="icon-facebook-circled"></li>
         </ul>
-        <p class="w-full h-fit text-center text-gray-700 text-[12px] simpleFont mt-5">Copyright © 2025,Developed By Parsa Dehghan & Reyhaneh Ghalambor, All Rights Reserved.</p>
+        <p class="w-full h-fit text-center text-gray-700 text-[12px] simpleFont mt-5">Copyright © 2025,Developed By
+          Parsa Dehghan & Reyhaneh Ghalambor, All Rights Reserved.</p>
       </footer>
   </main>
 </body>
