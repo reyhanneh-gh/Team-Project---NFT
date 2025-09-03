@@ -86,13 +86,20 @@ body {
     border: 1px solid #dadada1e;
     color: #703ffe;
   }
-
+  .dark {
+    background-color: #ffffff;
+    color: black;
+  }
 }
 
 /* -------------------------------------- */
 .mybg {
   background: #ffffff;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.047) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.047) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .simpleFont {
