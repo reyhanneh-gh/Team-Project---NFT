@@ -11,8 +11,9 @@
 </head>
 
 <body class="bg-[#070a29] lightMode zendots">
+  <main id="_main">
   <!----------------------------------------- nav -------------------------------->
-  <nav class="flex items-center justify-between py-5 px-4 transform-3d perspective-midrange 2xl:container mx-auto">
+  <nav class="flex items-center justify-between py-5 px-4 2xl:container mx-auto">
     <!-- logo -->
     <div class="flex justify-start w-[30%] lg:w-[15%]">
       <figure class="flex justify-center items-center">
@@ -39,11 +40,11 @@
     <div class="w-[65%] hidden lg:flex">
       <ul class="flex justify-around gap-5 w-full *:text-[15px]">
         <li class="group relative cursor-pointer">
-          <a class="group-hover:text-[#703FFE] duration-500 relative after:content-[] after:absolute after:left-[90%] after:top-1/2 after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-[#fff0] after:border-t-white after:border-l-[#fff0] after:border-r-[#fff0] group-hover:after:border-t-[#703FFE] after:duration-500 p-2"
+          <a id="homeArrow" class="group-hover:text-[#703FFE] duration-500 relative after:content-[] after:absolute after:left-[90%] after:top-1/2 after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-[#fff0] after:border-t-white after:border-l-[#fff0] after:border-r-[#fff0] group-hover:after:border-t-[#703FFE] after:duration-500 p-2"
             href="">Home
           </a>
           <ul
-            class="absolute cursor-pointer duration-500 invisible opacity-0 top-[170%] w-[200px] bg-white **:pl-3 **:py-3 **:text-black rounded-lg after:content-[] after:absolute after:left-[25%] after:top-[-10.5%] after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-white after:border-t-[#fff0] after:border-l-[#fff0] after:border-r-[#fff0] after:duration-500 group-hover:visible group-hover:opacity-100 group-hover:after:visible group-hover:after:opacity-100">
+            class="absolute z-50 cursor-pointer duration-500 invisible opacity-0 top-[170%] w-[200px] bg-white **:pl-3 **:py-3 **:text-black rounded-lg after:content-[] after:absolute after:left-[25%] after:top-[-10.5%] after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-white after:border-t-[#fff0] after:border-l-[#fff0] after:border-r-[#fff0] after:duration-500 group-hover:visible group-hover:opacity-100 group-hover:after:visible group-hover:after:opacity-100">
             <li
               class="border-b border-b-gray-200 duration-300 hover:*:text-[#703FFE] hover:*:duration-300 hover:bg-gray-100 rounded-lg">
               <a href="">Home 01</a>
@@ -60,12 +61,12 @@
         <li><a href="">About</a></li>
         <li><a href="">Road Map</a></li>
         <li><a href="">Team</a></li>
-        <li class="group relative cursor-pointer">
-          <a class="group-hover:text-[#703FFE] duration-500 relative after:content-[] after:absolute after:left-[90%] after:top-1/2 after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-[#fff0] after:border-t-white after:border-l-[#fff0] after:border-r-[#fff0] group-hover:after:border-t-[#703FFE] after:duration-500 p-2"
+        <li class="group relative z-50 cursor-pointer">
+          <a id="exploreArrow" class="group-hover:text-[#703FFE] duration-500 relative after:content-[] z-50 after:absolute after:left-[90%] after:top-1/2 after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-[#fff0] after:border-t-white after:border-l-[#fff0] after:border-r-[#fff0] group-hover:after:border-t-[#703FFE] after:duration-500 p-2"
             href="">Explore
           </a>
           <ul
-            class="absolute cursor-pointer duration-500 invisible opacity-0 top-[170%] w-[300px] bg-white **:pl-3 **:py-3 **:text-black rounded-lg after:content-[] after:absolute after:left-[25%] after:top-[-10.5%] after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-white after:border-t-[#fff0] after:border-l-[#fff0] after:border-r-[#fff0] after:duration-500 group-hover:visible group-hover:opacity-100 group-hover:after:visible group-hover:after:opacity-100">
+            class="absolute z-[100] cursor-pointer duration-500 invisible opacity-0 top-[170%] w-[300px] bg-white **:pl-3 **:py-3 **:text-black rounded-lg after:content-[] after:absolute after:left-[25%] after:top-[-10.5%] after:translate-x-1/2 after:w-[15px] after:h-[15px] after:border-[7.5px] after:border-b-white after:border-t-[#fff0] after:border-l-[#fff0] after:border-r-[#fff0] after:duration-500 group-hover:visible group-hover:opacity-100 group-hover:after:visible group-hover:after:opacity-100">
             <li
               class="border-b border-b-gray-200 duration-300 hover:*:text-[#703FFE] hover:*:duration-300 hover:bg-gray-100 rounded-lg">
               <a href="">visions & missions</a>
@@ -95,7 +96,7 @@
       </div>
     </div>
     <!-- left side menu -->
-    <div class="w-[250px] min-h-[100vh] bg-[#0a0a0a]">
+    <div id="mobMenuL" class="w-[250px] min-h-[100vh] bg-[#0a0a0a]">
       <figure class="w-full h-[80px] flex justify-start items-center border-b-1 border-b-[#3f3f3f54]">
         <img class="pl-5" src="src/images/imgi_1_logo-01.png" alt="" />
       </figure>
@@ -152,14 +153,14 @@
     </div>
   </section>
   <!---------------------------------- main ----------------------------------->
-  <main class="w-full 2xl:container 2xl:mx-auto">
+  <section class="w-full 2xl:container 2xl:mx-auto">
     <!----------------------------------- row first ----------------------------->
     <div class="w-full flex flex-wrap justify-around">
       <!-- left side -->
       <div class="w-full md:w-[45%] px-4 py-8">
         <h1 class="text-4xl md:text-[45px] lg:text-6xl lg:mt-20 lg:leading-20 md:w-[100%] w-[80%]">
           Collect Next Generation
-          <span class="text-[#b392ff]">NFTs</span>
+          <span id="nfts" class="text-[#b392ff]">NFTs</span>
           <br class="hidden lg:flex" />
           Today
         </h1>
@@ -193,15 +194,16 @@
       </div>
       <!-- right side -->
       <div class="w-full relative overflow-hidden py-20 md:w-[45%] px-2 md:py-5">
-        <!-- under image -->
-        <figure class="absolute md:-top-8 top-5 md:h md:right-0 right-5 z-40 rotate-[25deg] w-full h-full">
-          <img class="w-[100%]" src="src/images/bgimage.png" alt="" />
-        </figure>
-        <!-- image -->
-        <figure class="w-full h-full">
-          <img class="w-[95%] mx-auto relative z-50 object-cover" src="src/images/img1.png" alt="" />
-        </figure>
-      </div>
+  <!-- under image -->
+  <figure class="absolute md:-top-8 top-5 md:h md:right-0 right-5 z-10 rotate-[25deg] w-full h-full">
+    <img class="w-[100%]" src="src/images/bgimage.png" alt="" />
+  </figure>
+  <!-- image -->
+  <figure class="w-full h-full relative z-20">
+    <img class="w-[95%] mx-auto object-cover" src="src/images/img1.png" alt="" />
+  </figure>
+</div>
+
     </div>
     <!------------------------- row second ------------------>
     <div class="w-full flex flex-wrap justify-around overflow-hidden">
@@ -532,10 +534,10 @@
       <!-- --------------------------------header---------------------------------------->
       <header class="w-full h-fit flex flex-col justify-center items-center my-[50px]">
         <div
-          class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,_255,_255,_0.050)] border-gray-800 backdrop-blur-2xl flex justify-center items-center mb-[30px]">
+          class="w-fit h-fit px-3 py-1.5 btnFav2 flex justify-center items-center mb-[30px]">
           <h4 class="text-[18px] text-[#703FFE]">Road Map</h4>
         </div>
-        <h3 class="w-full md:w-[40%] text-2xl md:text-5xl text-[white] text-center mb-[30px]">The Journey of Cyfonii NFT
+        <h3 class="w-full md:w-[40%] text-2xl md:text-5xl  text-center mb-[30px]">The Journey of Cyfonii NFT
         </h3>
       </header>
 
@@ -650,10 +652,10 @@
       <!-- --------------------------------header---------------------------------------->
       <header class="w-full h-fit flex flex-col justify-center items-center my-[50px]">
         <div
-          class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,_255,_255,_0.050)] border-gray-800 backdrop-blur-2xl flex justify-center items-center mb-[30px]">
+          class="w-fit h-fit px-3 py-1.5 btnFav2 flex justify-center items-center mb-[30px]">
           <h4 class="text-[18px] text-[#703FFE]">Team Members</h4>
         </div>
-        <h3 class="w-full md:w-[40%] text-2xl md:text-5xl text-[white] text-center mb-[30px]">Our Amazing Team Members
+        <h3 class="w-full md:w-[40%] text-2xl md:text-5xl text-center mb-[30px]">Our Amazing Team Members
         </h3>
       </header>
       <section class="w-full h-fit flex flex-wrap justify-center items-center gap-y-5">
@@ -729,7 +731,7 @@
       <div class="w-full h-fit p-5 border-t border-t-gray-800 relative mt-[50px] flex justify-center items-center">
         <div
           class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,_255,_255,_0.050)] border-gray-800 backdrop-blur-2xl flex justify-center items-center text-center absolute top-0 left-[50%] translate-y-[-50%] translate-x-[-50%]">
-          <h4 class="text-[13px] text-[white]">We Are Partnered with Top Brands</h4>
+          <h4 class="text-[13px]">We Are Partnered with Top Brands</h4>
         </div>
         <figure class="w-[80%] lg:w-[60%] h-[200px] flex justify-center items-center">
           <img class="w-[20%] h-fit object-cover" src="src/images/logoipsum-07.png" alt="">
@@ -745,10 +747,10 @@
       <!-- --------------------------------header---------------------------------------->
       <header class="w-full h-fit flex flex-col justify-center items-center my-[50px]">
         <div
-          class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,_255,_255,_0.050)] border-gray-800 backdrop-blur-2xl flex justify-center items-center mb-[30px]">
+          class="w-fit h-fit px-3 py-1.5 btnFav2 flex justify-center items-center mb-[30px]">
           <h4 class="text-[18px] text-[#703FFE]">Team Members</h4>
         </div>
-        <h3 class="w-full md:w-[40%] text-2xl md:text-5xl text-[white] text-center mb-[30px]">Our Amazing Team Members
+        <h3 class="w-full md:w-[40%] text-2xl md:text-5xl text-center mb-[30px]">Our Amazing Team Members
         </h3>
       </header>
       <section
@@ -777,10 +779,10 @@
       <!-- --------------------------------header---------------------------------------->
       <header class="w-full h-fit flex flex-col justify-center items-center my-[50px]">
         <div
-          class="w-fit h-fit px-3 py-1.5 rounded-4xl border bg-[rgba(255,_255,_255,_0.050)] border-gray-800 backdrop-blur-2xl flex justify-center items-center mb-[30px]">
-          <h4 class="text-[18px] text-[#703FFE]">FAQs</h4>
+          class="w-fit h-fit px-3 py-1.5 btnFav2 flex justify-center items-center mb-[30px]">
+          <h4 class="text-[18px] text-[#703FFE] ">FAQs</h4>
         </div>
-        <h3 class="w-full md:w-[40%] text-2xl md:text-5xl text-[white] text-center mb-[30px]">Frequently Asked Questions
+        <h3 class="w-full md:w-[40%] text-2xl md:text-5xl text-center mb-[30px]">Frequently Asked Questions
         </h3>
         <p class="w-[50%] h-fit simpleFont text-center leading-loose text-[14px]">Below is a list of frequently asked
           questions and answers from partners and 3D artists. <br> Please check this FAQ first before contacting us.</p>
@@ -875,7 +877,7 @@
     <div class="w-full h-fit flex flex-wrap justify-center items-center">
       <!-- --------------------------------header---------------------------------------->
       <header class="w-full h-fit flex flex-col justify-center items-center mt-[50px]">
-        <h3 class="w-full md:w-[40%] text-2xl md:text-5xl text-[white] text-center mb-[30px]">Get Newsletter
+        <h3 class="w-full md:w-[40%] text-2xl md:text-5xl text-center mb-[30px]">Get Newsletter
         </h3>
         <p class="w-[50%] h-fit simpleFont text-center leading-loose text-[14px]">Get udpated with news, tips & tricks
         </p>
