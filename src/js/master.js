@@ -10,7 +10,7 @@ inpDrkLt.addEventListener("click", () => {
   inpDrkLt.classList.toggle("bg-[#946dee]");
   _main.classList.toggle("dark");
   mobMenuL.classList.toggle("bg-[#131313ab]");
-  mobMenuL.classList.toggle("bg-[#c7c4c4ce]");
+  mobMenuL.classList.toggle("bg-[#c7c4c4ca]");
   homeArrow.classList.toggle("after:border-t-white");
   homeArrow.classList.toggle("after:border-t-black");
   exploreArrow.classList.toggle("after:border-t-white");
