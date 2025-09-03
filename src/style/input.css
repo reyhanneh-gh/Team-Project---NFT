@@ -24,25 +24,32 @@ body {
     background-color: transparent;
     color: #ffff;
     background-image: linear-gradient(220deg, #b392ff 20%, #703ffe 100%);
+
     &:hover {
       background-image: linear-gradient(90deg, #b392ff 20%, #703ffe 100%);
     }
   }
+
   .lightMode {
     @apply text-white;
   }
+
   .zendots {
     font-family: "Zen Dots";
   }
+
   .readex {
     font-family: "Readex Pro Regular";
   }
+
   .hoverFav {
     @apply hover:text-[#703FFE] duration-500;
   }
+
   .txtFav {
     @apply text-[#703FFE];
   }
+
   .bgGlass {
     background-color: transparent;
     margin: -35px 0px 0px 0px;
@@ -67,23 +74,37 @@ body {
     background-color: transparent;
     color: #ffff;
     background-image: linear-gradient(220deg, #b392ff 20%, #703ffe 100%);
+
     &:hover {
       background-image: linear-gradient(90deg, #b392ff 20%, #703ffe 100%);
     }
   }
+
   .btnFav2 {
     background-color: #141634;
     border-radius: 32px;
     border: 1px solid #dadada1e;
     color: #703ffe;
   }
-  
+
 }
+
 /* -------------------------------------- */
 .mybg {
   background: #ffffff;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.047) 0%, rgba(0, 0, 0, 0) 100%);
 }
-.simpleFont{
+
+.simpleFont {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.bgBtn {
+  background-color: transparent;
+  color: #ffff;
+  background-image: linear-gradient(220deg, #fdb960 20%, #ff7029 100%);
+
+  &:hover {
+    background-image: linear-gradient(90deg, #ff7029 20%, #fde860 100%);
+  }
 }
