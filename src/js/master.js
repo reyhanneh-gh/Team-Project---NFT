@@ -50,6 +50,7 @@ subExplore.setAttribute("data-h", subExplore.clientHeight);
 subExplore.style.height = "0";
 
 inpSubExplore.addEventListener("click", () => {
+
   if (subExplore.style.height === "0px") {
     subExplore.style.height = subExplore.getAttribute("data-h") + "px";
     inpSubExplore.classList.add("after:rotate-180");
