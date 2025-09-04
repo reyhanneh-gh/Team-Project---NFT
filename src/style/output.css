@@ -542,6 +542,9 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .origin-top {
+    transform-origin: top;
+  }
   .-translate-x-1 {
     --tw-translate-x: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -1135,6 +1138,12 @@
     &::after {
       content: var(--tw-content);
       width: 15px;
+    }
+  }
+  .after\:origin-top {
+    &::after {
+      content: var(--tw-content);
+      transform-origin: top;
     }
   }
   .after\:translate-x-1\/2 {
