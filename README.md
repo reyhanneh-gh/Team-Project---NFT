@@ -9,13 +9,13 @@ The website features a **responsive navigation menu for mobile**, an **accordion
 
 ---
 
-## 📅 Created on | تاریخ ساخت
+## 🔗 Live Demo
 
-**Thursday, 4 September 2025 | پنج شنبه 13 شهریور**
+[View NFT Website](https://parsa-farshah.github.io/TeamProject4/) 🪄
 
 ---
 
-## ✨ Features | ویژگی‌ها
+## ✨ Features
 
 - 📱 **Fully Responsive** – optimized for desktop, tablet, and mobile
 - 🌗 **Dark Mode & Light Mode** toggle (JavaScript powered)
@@ -26,7 +26,7 @@ The website features a **responsive navigation menu for mobile**, an **accordion
 
 ---
 
-## 🛠️ Tech Stack | تکنولوژی‌ها
+## 🛠️ Tech Stack
 
 - **HTML5**
 - **CSS3**
@@ -45,17 +45,12 @@ The website features a **responsive navigation menu for mobile**, an **accordion
 
 ---
 
-## 🔧 Project Mentor | مربی پروژه
+### 🧑‍🎨 Credits
 
-[@parsa_ghorbanian_web](https://www.instagram.com/parsa_ghorbanian_web)
-
----
-
-## 🔗 Live Demo
-
-👉 [View NFT Website](https://parsa-farshah.github.io/TeamProject4/)
+**Mentor**: Parsa Ghorbanian
+**Date**: Sep 4, 2025  
 
 ---
 
-## 📸 Project Screenshots | پیش‌نمایش پروژه
+## 📸 Project Screenshots
 
