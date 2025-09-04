@@ -59,12 +59,12 @@ The website features a **responsive navigation menu for mobile**, an **accordion
       <img src="<table>
   <tr>
     <td width="50%" valign="top">
-      <img src="https://github.com/user-attachments/assets/5b082bfb-0b2b-42a0-8cb5-0675a37120e3" alt="Desktop View" width="100%" />
+      <img src="https://github.com/user-attachments/assets/ad70dcc3-06ee-4923-8239-d787ab17afbf" alt="Desktop View" width="100%" />
     </td>
     <td width="25%" valign="top">
       <img src="https://github.com/user-attachments/assets/fc516160-1408-4f4d-8b8b-6b1cd8fad7a4" alt="Mobile View – Top" width="100%" />
     </td>
     <td width="25%" valign="top">
-      <img src="https://github.com/user-attachments/assets/ad70dcc3-06ee-4923-8239-d787ab17afbf" alt="Mobile View – Bottom" width="100%" />
+      <img src="https://github.com/user-attachments/assets/5b082bfb-0b2b-42a0-8cb5-0675a37120e3" alt="Mobile View – Bottom" width="100%" />
     </td>
   </tr>
