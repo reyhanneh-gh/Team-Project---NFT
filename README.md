@@ -11,7 +11,7 @@ The website features a **responsive navigation menu for mobile**, an **accordion
 
 ## 📅 Created on | تاریخ ساخت
 
-**August 19, 2025 | ۲۸ مرداد ۲۰۲۵**
+**Thursday, 4 September 2025 | پنج شنبه 13 شهریور**
 
 ---
 
