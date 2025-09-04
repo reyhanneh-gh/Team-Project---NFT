@@ -2,12 +2,11 @@
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
-  :root,
-  :host {
+  :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-      "Liberation Mono", "Courier New", monospace;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-600: oklch(44.6% 0.03 256.802);
@@ -43,31 +42,17 @@
   }
 }
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0 solid;
   }
-  html,
-  :host {
+  html, :host {
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
     tab-size: 4;
-    font-family: var(
-      --default-font-family,
-      ui-sans-serif,
-      system-ui,
-      sans-serif,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      "Noto Color Emoji"
-    );
+    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
     font-feature-settings: var(--default-font-feature-settings, normal);
     font-variation-settings: var(--default-font-variation-settings, normal);
     -webkit-tap-highlight-color: transparent;
@@ -81,12 +66,7 @@
     -webkit-text-decoration: underline dotted;
     text-decoration: underline dotted;
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     font-size: inherit;
     font-weight: inherit;
   }
@@ -95,37 +75,19 @@
     -webkit-text-decoration: inherit;
     text-decoration: inherit;
   }
-  b,
-  strong {
+  b, strong {
     font-weight: bolder;
   }
-  code,
-  kbd,
-  samp,
-  pre {
-    font-family: var(
-      --default-mono-font-family,
-      ui-monospace,
-      SFMono-Regular,
-      Menlo,
-      Monaco,
-      Consolas,
-      "Liberation Mono",
-      "Courier New",
-      monospace
-    );
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
     font-feature-settings: var(--default-mono-font-feature-settings, normal);
-    font-variation-settings: var(
-      --default-mono-font-variation-settings,
-      normal
-    );
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
     font-size: 1em;
   }
   small {
     font-size: 80%;
   }
-  sub,
-  sup {
+  sub, sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -151,33 +113,18 @@
   summary {
     display: list-item;
   }
-  ol,
-  ul,
-  menu {
+  ol, ul, menu {
     list-style: none;
   }
-  img,
-  svg,
-  video,
-  canvas,
-  audio,
-  iframe,
-  embed,
-  object {
+  img, svg, video, canvas, audio, iframe, embed, object {
     display: block;
     vertical-align: middle;
   }
-  img,
-  video {
+  img, video {
     max-width: 100%;
     height: auto;
   }
-  button,
-  input,
-  select,
-  optgroup,
-  textarea,
-  ::file-selector-button {
+  button, input, select, optgroup, textarea, ::file-selector-button {
     font: inherit;
     font-feature-settings: inherit;
     font-variation-settings: inherit;
@@ -199,8 +146,7 @@
   ::placeholder {
     opacity: 1;
   }
-  @supports (not (-webkit-appearance: -apple-pay-button)) or
-    (contain-intrinsic-size: 1px) {
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
     ::placeholder {
       color: currentcolor;
       @supports (color: color-mix(in lab, red, red)) {
@@ -224,15 +170,7 @@
   ::-webkit-datetime-edit-fields-wrapper {
     padding: 0;
   }
-  ::-webkit-datetime-edit,
-  ::-webkit-datetime-edit-year-field,
-  ::-webkit-datetime-edit-month-field,
-  ::-webkit-datetime-edit-day-field,
-  ::-webkit-datetime-edit-hour-field,
-  ::-webkit-datetime-edit-minute-field,
-  ::-webkit-datetime-edit-second-field,
-  ::-webkit-datetime-edit-millisecond-field,
-  ::-webkit-datetime-edit-meridiem-field {
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
     padding-block: 0;
   }
   ::-webkit-calendar-picker-indicator {
@@ -241,13 +179,10 @@
   :-moz-ui-invalid {
     box-shadow: none;
   }
-  button,
-  input:where([type="button"], [type="reset"], [type="submit"]),
-  ::file-selector-button {
+  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
     appearance: button;
   }
-  ::-webkit-inner-spin-button,
-  ::-webkit-outer-spin-button {
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
     height: auto;
   }
   [hidden]:where(:not([hidden="until-found"])) {
@@ -426,7 +361,7 @@
     height: 80px;
   }
   .h-1\/2 {
-    height: calc(1 / 2 * 100%);
+    height: calc(1/2 * 100%);
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
@@ -495,19 +430,19 @@
     min-height: 100vh;
   }
   .w-1\/2 {
-    width: calc(1 / 2 * 100%);
+    width: calc(1/2 * 100%);
   }
   .w-1\/6 {
-    width: calc(1 / 6 * 100%);
+    width: calc(1/6 * 100%);
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
   .w-10\/12 {
-    width: calc(10 / 12 * 100%);
+    width: calc(10/12 * 100%);
   }
   .w-11\/12 {
-    width: calc(11 / 12 * 100%);
+    width: calc(11/12 * 100%);
   }
   .w-\[20\%\] {
     width: 20%;
@@ -588,7 +523,7 @@
     flex-shrink: 0;
   }
   .-translate-x-1\/2 {
-    --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
+    --tw-translate-x: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-x-\[-50\%\] {
@@ -600,7 +535,7 @@
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-y-1\/2 {
-    --tw-translate-y: calc(1 / 2 * 100%);
+    --tw-translate-y: calc(1/2 * 100%);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-y-\[-50\%\] {
@@ -757,7 +692,7 @@
     background-color: #070a29;
   }
   .bg-\[\#703FFE\] {
-    background-color: #703ffe;
+    background-color: #703FFE;
   }
   .bg-\[\#703ffe\] {
     background-color: #703ffe;
@@ -772,13 +707,13 @@
     background-color: #ffffff15;
   }
   .bg-\[rgba\(255\,255\,255\,0\.03\)\] {
-    background-color: rgba(255, 255, 255, 0.03);
+    background-color: rgba(255,255,255,0.03);
   }
   .bg-\[rgba\(255\,255\,255\,0\.07\)\] {
-    background-color: rgba(255, 255, 255, 0.07);
+    background-color: rgba(255,255,255,0.07);
   }
   .bg-\[rgba\(255\,_255\,_255\,_0\.050\)\] {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.050);
   }
   .bg-gray-800 {
     background-color: var(--color-gray-800);
@@ -896,7 +831,7 @@
     line-height: var(--leading-loose);
   }
   .text-\[\#703FFE\] {
-    color: #703ffe;
+    color: #703FFE;
   }
   .text-\[\#20233f\] {
     color: #20233f;
@@ -921,16 +856,8 @@
   }
   .backdrop-blur-2xl {
     --tw-backdrop-blur: blur(var(--blur-2xl));
-    -webkit-backdrop-filter: var(--tw-backdrop-blur)
-      var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)
-      var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate)
-      var(--tw-backdrop-invert) var(--tw-backdrop-opacity)
-      var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
-      var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
-      var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
-      var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
-      var(--tw-backdrop-sepia);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
   .duration-300 {
     --tw-duration: 300ms;
@@ -996,7 +923,7 @@
   }
   .\*\:bg-\[rgba\(255\,255\,255\,0\.07\)\] {
     :is(& > *) {
-      background-color: rgba(255, 255, 255, 0.07);
+      background-color: rgba(255,255,255,0.07);
     }
   }
   .\*\:p-2\.5 {
@@ -1080,7 +1007,7 @@
   .group-hover\:text-\[\#703FFE\] {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
-        color: #703ffe;
+        color: #703FFE;
       }
     }
   }
@@ -1105,7 +1032,7 @@
   .after\:top-1\/2 {
     &::after {
       content: var(--tw-content);
-      top: calc(1 / 2 * 100%);
+      top: calc(1/2 * 100%);
     }
   }
   .after\:top-\[-10\.5\%\] {
@@ -1153,7 +1080,7 @@
   .after\:translate-x-1\/2 {
     &::after {
       content: var(--tw-content);
-      --tw-translate-x: calc(1 / 2 * 100%);
+      --tw-translate-x: calc(1/2 * 100%);
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
@@ -1235,7 +1162,7 @@
       @media (hover: hover) {
         &::after {
           content: var(--tw-content);
-          border-top-color: #703ffe;
+          border-top-color: #703FFE;
         }
       }
     }
@@ -1269,8 +1196,7 @@
     &:hover {
       @media (hover: hover) {
         --tw-rotate-y: rotateY(180deg);
-        transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z)
-          var(--tw-skew-x) var(--tw-skew-y);
+        transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
       }
     }
   }
@@ -1298,7 +1224,7 @@
   .hover\:text-\[\#703FFE\] {
     &:hover {
       @media (hover: hover) {
-        color: #703ffe;
+        color: #703FFE;
       }
     }
   }
@@ -1313,7 +1239,7 @@
     :is(& > *) {
       &:hover {
         @media (hover: hover) {
-          background-color: #703ffe;
+          background-color: #703FFE;
         }
       }
     }
@@ -1322,7 +1248,7 @@
     :is(& > *) {
       &:hover {
         @media (hover: hover) {
-          color: #703ffe;
+          color: #703FFE;
         }
       }
     }
@@ -1331,7 +1257,7 @@
     &:hover {
       @media (hover: hover) {
         :is(& > *) {
-          color: #703ffe;
+          color: #703FFE;
         }
       }
     }
@@ -1398,7 +1324,7 @@
   }
   .md\:w-1\/3 {
     @media (width >= 48rem) {
-      width: calc(1 / 3 * 100%);
+      width: calc(1/3 * 100%);
     }
   }
   .md\:w-\[10\%\] {
@@ -1564,17 +1490,17 @@
   }
   .lg\:w-1\/2 {
     @media (width >= 64rem) {
-      width: calc(1 / 2 * 100%);
+      width: calc(1/2 * 100%);
     }
   }
   .lg\:w-1\/6 {
     @media (width >= 64rem) {
-      width: calc(1 / 6 * 100%);
+      width: calc(1/6 * 100%);
     }
   }
   .lg\:w-4\/6 {
     @media (width >= 64rem) {
-      width: calc(4 / 6 * 100%);
+      width: calc(4/6 * 100%);
     }
   }
   .lg\:w-\[8\%\] {
@@ -1715,8 +1641,7 @@
   font-family: "Readex Pro Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("Readex Pro Regular"),
-    url("../fonts/ReadexPro[HEXP\,wght].woff") format("woff");
+  src: local("Readex Pro Regular"), url("../fonts/ReadexPro[HEXP\,wght].woff") format("woff");
 }
 body {
   font-family: "Zen Dots";
@@ -1744,12 +1669,12 @@ body {
     transition-duration: 500ms;
     &:hover {
       @media (hover: hover) {
-        color: #703ffe;
+        color: #703FFE;
       }
     }
   }
   .txtFav {
-    color: #703ffe;
+    color: #703FFE;
   }
   .bgGlass {
     background-color: transparent;
@@ -1791,11 +1716,7 @@ body {
 }
 .mybg {
   background: #ffffff;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.047) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: linear-gradient( 180deg, rgba(255, 255, 255, 0.047) 0%, rgba(0, 0, 0, 0) 100% );
 }
 .simpleFont {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -1898,12 +1819,8 @@ body {
   inherits: false;
 }
 @layer properties {
-  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or
-    ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
-    *,
-    ::before,
-    ::after,
-    ::backdrop {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
