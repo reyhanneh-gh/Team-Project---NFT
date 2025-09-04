@@ -111,3 +111,5 @@ sp.forEach((val, i) => {
     }
   });
 });
+
+AOS.init();
