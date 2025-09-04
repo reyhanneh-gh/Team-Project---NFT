@@ -48,6 +48,7 @@ The website features a **responsive navigation menu for mobile**, an **accordion
 ### 🧑‍🎨 Credits
 
 **Mentor**: Parsa Ghorbanian
+
 **Date**: Sep 4, 2025  
 
 ---
