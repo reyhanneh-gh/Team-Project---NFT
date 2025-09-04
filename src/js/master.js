@@ -1,10 +1,22 @@
 let inpDrkLt = document.getElementById("drkLt");
 let imgDrkLt = document.getElementById("imgDrkLt");
 let _main = document.querySelector("main");
+let homeArrow = document.getElementById("homeArrow");
+let exploreArrow = document.getElementById("exploreArrow");
+let nfts = document.getElementById("nfts");
+let mobMenuL = document.getElementById("mobMenuL");
 
 inpDrkLt.addEventListener("click", () => {
-  inpDrkLt.classList.toggle("bg-[#b392ff]");
-  _main.classList.add("dark");
+  inpDrkLt.classList.toggle("bg-[#946dee]");
+  _main.classList.toggle("dark");
+  mobMenuL.classList.toggle("bg-[#131313ab]");
+  mobMenuL.classList.toggle("bg-[#c7c4c4ca]");
+  homeArrow.classList.toggle("after:border-t-white");
+  homeArrow.classList.toggle("after:border-t-black");
+  exploreArrow.classList.toggle("after:border-t-white");
+  exploreArrow.classList.toggle("after:border-t-black");
+  nfts.classList.toggle("text-[#b392ff]");
+  nfts.classList.toggle("text-[#6542b6]");
   if (imgDrkLt.getAttribute("src") === "src/images/lightModeWhite.png") {
     imgDrkLt.setAttribute("src", "src/images/darkModeBlack.png");
   } else {
@@ -38,6 +50,7 @@ subExplore.setAttribute("data-h", subExplore.clientHeight);
 subExplore.style.height = "0";
 
 inpSubExplore.addEventListener("click", () => {
+
   if (subExplore.style.height === "0px") {
     subExplore.style.height = subExplore.getAttribute("data-h") + "px";
     inpSubExplore.classList.add("after:rotate-180");

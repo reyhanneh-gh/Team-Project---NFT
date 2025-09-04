@@ -36,7 +36,6 @@
     --radius-3xl: 1.5rem;
     --radius-4xl: 2rem;
     --blur-2xl: 40px;
-    --perspective-midrange: 800px;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -265,14 +264,14 @@
   .left-\[75\%\] {
     left: 75%;
   }
+  .z-10 {
+    z-index: 10;
+  }
   .z-20 {
     z-index: 20;
   }
   .z-30 {
     z-index: 30;
-  }
-  .z-40 {
-    z-index: 40;
   }
   .z-50 {
     z-index: 50;
@@ -282,6 +281,9 @@
   }
   .z-\[60\] {
     z-index: 60;
+  }
+  .z-\[100\] {
+    z-index: 100;
   }
   .m-3 {
     margin: calc(var(--spacing) * 3);
@@ -697,11 +699,14 @@
   .bg-\[\#703ffe\] {
     background-color: #703ffe;
   }
+  .bg-\[\#946dee\] {
+    background-color: #946dee;
+  }
   .bg-\[\#131313ab\] {
     background-color: #131313ab;
   }
-  .bg-\[\#b392ff\] {
-    background-color: #b392ff;
+  .bg-\[\#c7c4c4ca\] {
+    background-color: #c7c4c4ca;
   }
   .bg-\[\#ffffff15\] {
     background-color: #ffffff15;
@@ -833,6 +838,9 @@
   .text-\[\#703FFE\] {
     color: #703FFE;
   }
+  .text-\[\#6542b6\] {
+    color: #6542b6;
+  }
   .text-\[\#20233f\] {
     color: #20233f;
   }
@@ -841,9 +849,6 @@
   }
   .text-\[\#b392ff\] {
     color: #b392ff;
-  }
-  .text-\[white\] {
-    color: white;
   }
   .text-gray-600 {
     color: var(--color-gray-600);
@@ -866,12 +871,6 @@
   .duration-500 {
     --tw-duration: 500ms;
     transition-duration: 500ms;
-  }
-  .perspective-midrange {
-    perspective: var(--perspective-midrange);
-  }
-  .transform-3d {
-    transform-style: preserve-3d;
   }
   .\*\:flex {
     :is(& > *) {
@@ -1077,6 +1076,12 @@
       width: 15px;
     }
   }
+  .after\:origin-top {
+    &::after {
+      content: var(--tw-content);
+      transform-origin: top;
+    }
+  }
   .after\:translate-x-1\/2 {
     &::after {
       content: var(--tw-content);
@@ -1101,6 +1106,12 @@
     &::after {
       content: var(--tw-content);
       border-top-color: #fff0;
+    }
+  }
+  .after\:border-t-black {
+    &::after {
+      content: var(--tw-content);
+      border-top-color: var(--color-black);
     }
   }
   .after\:border-t-white {
@@ -1649,7 +1660,7 @@ body {
 @layer utilities {
   .bgFav {
     background-color: transparent;
-    color: #ffff;
+    color: #c7c4c4;
     background-image: linear-gradient(220deg, #b392ff 20%, #703ffe 100%);
     &:hover {
       background-image: linear-gradient(90deg, #b392ff 20%, #703ffe 100%);
@@ -1710,7 +1721,7 @@ body {
     color: #703ffe;
   }
   .dark {
-    background-color: #ffffff;
+    background-color: #b392ff;
     color: black;
   }
 }
@@ -1723,7 +1734,7 @@ body {
 }
 .bgBtn {
   background-color: transparent;
-  color: #ffff;
+  color: #ffffff;
   background-image: linear-gradient(220deg, #fdb960 20%, #ff7029 100%);
   &:hover {
     background-image: linear-gradient(90deg, #ff7029 20%, #fde860 100%);
