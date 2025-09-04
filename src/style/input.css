@@ -60,6 +60,14 @@ body {
     border-color: #dadada1e;
     border-radius: 16px 16px 0px 0px;
   }
+  .bgGlass2 {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #ffffff0d 0%, #ffffff00 73.86%);
+    border-style: solid;
+    border-width: 1px 1px 0px 1px;
+    border-color: #dadada1e;
+    border-radius: 16px 16px 0px 0px;
+  }
 }
 
 @layer components {
